@@ -1,4 +1,5 @@
 - Dates:
+	- GE demo is February 18-20
 - Questions for Jeremy:
 	- Christine Rogers in April of 2025 said she had my badge in her office at Red Oaks. Who has it now?
 	- I have no idea where anything is onsite. is there any way i could have someone show me around and/or I get there a day early to look around?
