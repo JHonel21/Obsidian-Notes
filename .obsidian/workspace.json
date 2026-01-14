@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Coding/JSON.md",
+                "file": "3D Printing/Print Settings Reference/Layer Counts.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JSON"
+              "title": "Layer Counts"
             }
           }
         ],
@@ -272,9 +272,20 @@
   },
   "active": "f0578ec91f4e4489",
   "lastOpenFiles": [
+    "3D Printing/Print Settings Reference/Infill Patterns and Density.md",
+    "3D Printing/Print Settings Reference/Supports.md",
+    "3D Printing/Print Settings Reference/Layer Counts.md",
+    "3D Printing/Printer and Filament Tuning/Extrusion Multiplier.md",
+    "3D Printing/Print Settings Reference",
+    "3D Printing/Printer and Filament Tuning/Pressure Advance.md",
+    "3D Printing/Connecting to RPi.md",
+    "3D Printing/Printer and Filament Tuning",
+    "Coding/JSON.md",
+    "Connecting to RPi",
+    "3D Printing/3D Printing.md",
+    "Coding/Mermaid",
     "Coding/AI.md",
     "Coding/Untitled.md",
-    "Coding/JSON.md",
     "OneNote",
     "Coding/VBA.md",
     "Untitled.canvas",
@@ -283,7 +294,6 @@
     "testing push from wc.md",
     "Test 1.md",
     "3D Printing",
-    "3D Printing/3D Printing.md",
     "Welcome.md"
   ]
 }
