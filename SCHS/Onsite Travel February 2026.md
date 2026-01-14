@@ -5,6 +5,6 @@
 	- I have no idea where anything is onsite. is there any way i could have someone show me around and/or I get there a day early to look around?
 - Flight
 - Rental car:
-- Hotel:
+- Hotel: springhill suites is where GE
 - Food:
 - Milage:
