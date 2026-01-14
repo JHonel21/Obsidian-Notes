@@ -1,0 +1,3 @@
+- Unescaped format for API calls
+- JSON escaper/unescaper: [https://www.freeformatter.com/json-escape.html](https://www.freeformatter.com/json-escape.html)
+- JSON validator: [https://jsonlint.com/](https://jsonlint.com/)
