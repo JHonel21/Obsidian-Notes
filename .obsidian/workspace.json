@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SCHS/Onsite Travel February 2026.md",
+                "file": "3D Printing/Printer and Filament Tuning/Pressure Advance/0.6mm Nozzle – Overture Glow PLA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Onsite Travel February 2026"
+              "title": "0.6mm Nozzle – Overture Glow PLA"
             }
           }
         ]
@@ -174,9 +174,19 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "8152cb330df15044",
+            "type": "leaf",
+            "state": {
+              "type": "side-panel-control-view",
+              "state": {},
+              "icon": "viewIcon",
+              "title": "Markdown-Autocomplete"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -201,8 +211,9 @@
   },
   "active": "f0578ec91f4e4489",
   "lastOpenFiles": [
-    "SCHS/GE Demo.md",
+    "Coding/AI.md",
     "SCHS/Onsite Travel February 2026.md",
+    "SCHS/GE Demo.md",
     "3D Printing/Printer and Filament Tuning/Pressure Advance/0.6mm Nozzle – Overture Glow PLA.md",
     "SCHS",
     "Coding/Quick Types/Shortcuts.md",
@@ -212,7 +223,6 @@
     "3D Printing/Printer and Filament Tuning/Pressure Advance",
     "3D Printing/Connecting to RPi.md",
     "Coding/VBA.md",
-    "Coding/AI.md",
     "3D Printing/Print Settings Reference/Supports.md",
     "3D Printing/Print Settings Reference/Layer Counts.md",
     "3D Printing/Print Settings Reference/Infill Patterns and Density.md",
