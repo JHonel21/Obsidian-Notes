@@ -9,9 +9,11 @@
 - Food:
 - Milage:
 
-Expedia:
-- flights February 17 and 21
+Expedia quote from 1/14:
+- flights:
+					-February 17 and 21
 					-united to redmond: 8:55am - 12:58pm
      -united to tulsa: 1:09pm - 8:43pm
-- hotel:home2, ~$721.26
-- adding compact rental car: $940.22
+- hotel: home2
+- rental car: Alamo
+- total: $901.21
