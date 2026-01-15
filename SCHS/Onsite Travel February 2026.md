@@ -3,11 +3,21 @@
 - Questions for Jeremy:
 	- Christine Rogers in April of 2025 said she had my badge in her office at Red Oaks. Who has it now?
 	- I have no idea where anything is onsite. is there any way i could have someone show me around and/or I get there a day early to look around?
-- Flight
-- Rental car:
-- Hotel: springhill suites is where GE
-- Food:
-- Milage:
+	- The travel policy stated that local use of rental cars or uber isn't permitted. i would assume that isn't an issue with me coming into central Oregon but thought I'd check 
+
+TOTAL APPOXIMATE COST: $36+$408+$10+$981.21=$1,435.21 
+
+- airport parking: $9/daily = $36
+
+- Food: no receipts needed 
+- 2/17: $64
+- 2/18: $86
+- 2/19: $86
+- 2/20: $86
+- 2/21: $86
+- Total: $408
+
+- Milage: ~$10
 
 Expedia quote from 1/14 — Could change potentially:
 - flights:
