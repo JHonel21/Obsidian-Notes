@@ -22,4 +22,9 @@ Expedia quote from 1/14 — Could change potentially:
 GSA Per Diem Guidelines:
 -https://www.gsa.gov/travel/plan-book/per-diem-rates/per-diem-rates-results?action=perdiems_report&fiscal_year=2026%20(Current%20federal%20fiscal%20year)&city=Bend&state=OR&zip=
 -Daily lodging rates (excluding taxes): $125
--Food: here
+-Food: 
+M&IE total: $86
+Breakfast: $22
+Lunch: $23
+Dinner: $36
+First and lastday of travel: $64.50
