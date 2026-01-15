@@ -9,11 +9,12 @@
 - Food:
 - Milage:
 
-Expedia quote from 1/14:
+Expedia quote from 1/14 — Could change potentially:
 - flights:
 					-February 17 and 21
 					-united to redmond: 8:55am - 12:58pm
      -united to tulsa: 1:09pm - 8:43pm
+					-$80 for checked bag roundtrip
 - hotel: home2
 - rental car: Alamo
-- total: $901.21
+- total: $981.21
