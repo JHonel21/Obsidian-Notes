@@ -1,2 +1,1 @@
-glow pla
-lowered speed slightly to see if fixes spot 
+glow pla: 0.99
