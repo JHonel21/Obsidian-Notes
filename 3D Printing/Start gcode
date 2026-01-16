@@ -1,0 +1,47 @@
+Moving along x-axis
+M107                     ; Turn off part cooling fan
+G90                      ; Use absolute positioning
+M82                      ; Use absolute mode for extruder
+M104 S[first_layer_temperature] T0  ; Set extruder temp (non-wait)
+M140 S[first_layer_bed_temperature] ; Set bed temp (non-wait)
+G28                      ; Home all axes
+BED_MESH_PROFILE LOAD=default
+G1 X20 Y20 Z5 F3000      ; Trigger mesh
+G1 X10 Y10 F2000
+M190 S[first_layer_bed_temperature] ; Wait for bed temp
+M109 S[first_layer_temperature]     ; Wait for extruder temp
+G4 P10000                ; Heat soak for 10 seconds
+M117 Purging...
+G92 E0
+G1 Z0.32 F3000           ; Match your first layer height
+G1 X10 Y10 F3000         ; Start position
+G1 X200 Y10 E20 F1500    ; First purge line along X-axis
+G1 X200 Y12 F5000        ; Quick wipe move
+G1 X10 Y12 E25 F1500     ; Second purge line along X-axis
+G92 E0
+G1 Z0.35 F3000           ; Lift slightly before print
+M117 Printing...
+
+moving along the y-axis
+M107                     ; Turn off part cooling fan
+G90                      ; Use absolute positioning
+M82                      ; Use absolute mode for extruder
+M104 S[first_layer_temperature] T0  ; Set extruder temp (non-wait)
+M140 S[first_layer_bed_temperature] ; Set bed temp (non-wait)
+G28                      ; Home all axes
+BED_MESH_PROFILE LOAD=default
+G1 X20 Y20 Z5 F3000      ; Trigger mesh
+G1 X10 Y10 F2000
+M190 S[first_layer_bed_temperature] ; Wait for bed temp
+M109 S[first_layer_temperature]     ; Wait for extruder temp
+G4 P10000                ; Heat soak for 10 seconds
+M117 Purging...
+G92 E0
+G1 Z0.32 F3000           ; Match your first layer height
+G1 X10 Y10 F3000
+G1 X10 Y150 E20 F1500    ; Longer prime line
+G1 X12 Y150 F5000        ; Quick wipe
+G1 X12 Y10 E25 F1500     ; Second prime line
+G92 E0
+G1 Z0.35 F3000           ; Lift slightly before print
+M117 Printing...
