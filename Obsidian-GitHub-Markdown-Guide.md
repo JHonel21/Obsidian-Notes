@@ -15,7 +15,6 @@ created: 2026-01-22
 A practical Markdown syntax guide that renders cleanly in **Obsidian** and remains readable and stable when synced to **GitHub**.
 
 ---
-
 ## File & Folder Naming
 
 **Best practices**
@@ -26,19 +25,17 @@ A practical Markdown syntax guide that renders cleanly in **Obsidian** and remai
 ```text
 system-architecture.md
 pocus_workflow.md
+```
 
-Headings: Obsidian treats the first # as the note title by default.
+---
+## Headings
+
+```
 # H1 – Note Title
 ## H2 – Section
 ### H3 – Subsection
 #### H4
+```
+---
+## Text Formatting
 
-Text Formatting
-**Bold**
-*Italic*
-~~Strikethrough~~
-`Inline code`
-
-Tasklists
-- [ ] To do
-- [x] Done
