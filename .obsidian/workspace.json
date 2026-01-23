@@ -13,24 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3D Printing/Printer and Filament Tuning/Extrusion Multiplier.md",
+                "file": "3D-Printing/Printer-and-Filament-Tuning/Extrusion-Multiplier.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Extrusion Multiplier"
+              "title": "Extrusion-Multiplier"
             }
           },
           {
             "id": "908679d07fc439eb",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.11.5"
+                "file": "3D-Printing/Print-Settings-Reference/Infill-Patterns-and-Density.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.5"
+              "icon": "lucide-file",
+              "title": "Infill-Patterns-and-Density"
             }
           }
         ],
@@ -199,12 +201,11 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -224,35 +225,36 @@
   },
   "active": "908679d07fc439eb",
   "lastOpenFiles": [
-    "3D Printing/Start gcode",
-    "Coding/Excel or Sheets.md",
-    "Coding/Mermaid/Examples/Grouped Physical Architecture.md",
-    "Coding/Mermaid/Examples/Flowchart with 4 branched paths.md",
-    "3D Printing/Printer and Filament Tuning/Extrusion Multiplier.md",
+    "3D-Printing/Print-Settings-Reference/Layer-Counts.md",
+    "3D-Printing/Printer-and-Filament-Tuning/Extrusion-Multiplier.md",
+    "3D-Printing/Connecting-to-RPi.md",
+    "Coding/Mermaid/Examples/Flowchart-with-4-branched-paths.md",
+    "Coding/Mermaid/Examples/Grouped-Physical-Architecture.md",
+    "SCHS/Onsite-Travel-February-2026.md",
+    "SCHS/GE-Demo.md",
+    "Coding/Excel-Sheets.md",
+    "Obsidian-GitHub-Markdown-Guide.md",
+    "3D-Printing/Printer-and-Filament-Tuning/Pressure-Advance/Point-6mm-Nozzle_Overture-Glow-PLA.md",
+    "3D-Printing/Start gcode",
     "Coding/Mermaid/Examples",
     "Coding/Mermaid/Untitled.md",
-    "SCHS/Onsite Travel February 2026.md",
     "3D Printing/Printer and Filament Tuning/Pressure Advance/0.6mm Nozzle – Overture Glow PLA.md",
     "Coding/AI.md",
-    "SCHS/GE Demo.md",
     "SCHS",
-    "Coding/Quick Types/Shortcuts.md",
-    "Coding/Quick Types/Windows Symbols.md",
+    "Coding/Quick-Types/Shortcuts.md",
+    "Coding/Quick-Types/Windows Symbols.md",
     "Coding/Quick Types/Shortcuts",
-    "Coding/Quick Types",
-    "3D Printing/Printer and Filament Tuning/Pressure Advance",
-    "3D Printing/Connecting to RPi.md",
+    "Coding/Quick-Types",
+    "3D-Printing/Printer-and-Filament-Tuning/Pressure-Advance",
     "Coding/VBA.md",
-    "3D Printing/Print Settings Reference/Supports.md",
-    "3D Printing/Print Settings Reference/Layer Counts.md",
-    "3D Printing/Print Settings Reference/Infill Patterns and Density.md",
-    "3D Printing/Print Settings Reference",
-    "3D Printing/Printer and Filament Tuning",
+    "3D-Printing/Print-Settings-Reference/Supports.md",
+    "3D-Printing/Print-Settings-Reference/Infill-Patterns-and-Density.md",
+    "3D-Printing/Print-Settings-Reference",
+    "3D-Printing/Printer-and-Filament-Tuning",
     "Coding/JSON.md",
     "Connecting to RPi",
     "3D Printing/3D Printing.md",
     "Coding/Mermaid",
-    "OneNote",
     "Untitled.canvas",
     "Testing automated push.md",
     "testing push from wc.md",
