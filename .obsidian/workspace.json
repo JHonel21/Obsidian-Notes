@@ -171,8 +171,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-ghost",
+              "title": "git-view"
             }
           },
           {
@@ -181,8 +181,8 @@
             "state": {
               "type": "side-panel-control-view",
               "state": {},
-              "icon": "viewIcon",
-              "title": "Markdown-Autocomplete"
+              "icon": "lucide-ghost",
+              "title": "side-panel-control-view"
             }
           }
         ],
@@ -203,10 +203,7 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "obsidian-git:Open Git source control": false,
-      "templater-obsidian:Templater": false,
-      "voice:Voice read text": false,
-      "obsidian-importer:Open Importer": false,
-      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
+      "templater-obsidian:Templater": false
     }
   },
   "active": "f0578ec91f4e4489",
