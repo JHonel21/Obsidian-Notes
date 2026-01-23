@@ -38,4 +38,10 @@ pocus_workflow.md
 ```
 ---
 ## Text Formatting
+**Bold**
+*Italic*
+~~Strikethrough~~
+`Inline code`
+
+---
 
