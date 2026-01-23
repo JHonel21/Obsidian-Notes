@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Extrusion Multiplier"
             }
+          },
+          {
+            "id": "908679d07fc439eb",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.5"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.5"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -209,7 +222,7 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "f0578ec91f4e4489",
+  "active": "908679d07fc439eb",
   "lastOpenFiles": [
     "3D Printing/Start gcode",
     "Coding/Excel or Sheets.md",
