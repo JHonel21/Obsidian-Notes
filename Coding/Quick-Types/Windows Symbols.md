@@ -2,20 +2,20 @@
 
 Typographic Symbols
 
-|   |   |   |   |
-|---|---|---|---|
-|Symbol|Name|Alt Code / Method|Notes|
-|–|En dash|Alt+0150|Used for ranges (e.g., 10–20)|
-|—|Em dash|Alt+0151|Used for breaks in thought—like this|
-|•|Bullet|Alt+0149|For lists|
-|°|Degree|Alt+0176|Temperature or angles (e.g., 75°)|
-|′|Prime|No Alt code — use '|For minutes/feet (e.g., 5′ 8″)|
-|″|Double prime|No Alt code — use "|For seconds/inches (e.g., 6′ 2″)|
-|‘ ’|Single quotes|Alt+0145 (left), Alt+0146 (right)|Curly apostrophes|
-|“ ”|Double quotes|Alt+0147 (left), Alt+0148 (right)|Smart quotes|
-|…|Ellipsis|Alt+0133|Horizontal dots|
-|†|Dagger|Alt+0134|Footnote indicator|
-|‡|Double dagger|Alt+0135|Second-level footnote|
+|        |               |                                   |                                      |
+| ------ | ------------- | --------------------------------- | ------------------------------------ |
+| Symbol | Name          | Alt Code / Method                 | Notes                                |
+| –      | En dash       | Alt+0150                          | Used for ranges (e.g., 10–20)        |
+| —      | Em dash       | Alt+0151                          | Used for breaks in thought—like this |
+| •      | Bullet        | Alt+0149                          | For lists                            |
+| °      | Degree        | Alt+0176                          | Temperature or angles (e.g., 75°)    |
+| ′      | Prime         | No Alt code — use '               | For minutes/feet (e.g., 5′ 8″)       |
+| ″      | Double prime  | No Alt code — use "               | For seconds/inches (e.g., 6′ 2″)     |
+| ‘ ’    | Single quotes | Alt+0145 (left), Alt+0146 (right) | Curly apostrophes                    |
+| “ ”    | Double quotes | Alt+0147 (left), Alt+0148 (right) | Smart quotes                         |
+| …      | Ellipsis      | Alt+0133                          | Horizontal dots                      |
+| †      | Dagger        | Alt+0134                          | Footnote indicator                   |
+| ‡      | Double dagger | Alt+0135                          | Second-level footnote                |
 
 Common Symbols
 
