@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Coding/Quick-Types/Windows Symbols.md",
+                "file": "Coding/VBA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Windows Symbols"
+              "title": "VBA"
             }
           }
         ]
@@ -211,6 +211,7 @@
   },
   "active": "f0578ec91f4e4489",
   "lastOpenFiles": [
+    "Coding/Quick-Types/Windows Symbols.md",
     "Obsidian-GitHub-Markdown-Guide.md",
     "SCHS/GE-Demo.md",
     "Architecture/Untitled.md",
@@ -233,7 +234,6 @@
     "Coding/AI.md",
     "SCHS",
     "Coding/Quick-Types/Shortcuts.md",
-    "Coding/Quick-Types/Windows Symbols.md",
     "Coding/Quick Types/Shortcuts",
     "Coding/Quick-Types",
     "3D-Printing/Printer-and-Filament-Tuning/Pressure-Advance",

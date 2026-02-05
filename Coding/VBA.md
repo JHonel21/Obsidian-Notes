@@ -1,0 +1,1 @@
+try Number.FromText(Text.Start([Valve delineation],1)) otherwise null
