@@ -1,14 +1,14 @@
-|   |   |
-|---|---|
-|Shortcut|Action|
-|Ctrl + C|Copy|
-|Ctrl + X|Cut|
-|Ctrl + V|Paste|
-|Ctrl + Z|Undo|
-|Ctrl + Y|Redo|
-|Ctrl + A|Select all|
-|Ctrl + S|Save|
-|Ctrl + P|Print|
+|          |            |
+| -------- | ---------- |
+| Shortcut | Action     |
+| Ctrl + C | Copy       |
+| Ctrl + X | Cut        |
+| Ctrl + V | Paste      |
+| Ctrl + Z | Undo       |
+| Ctrl + Y | Redo       |
+| Ctrl + A | Select all |
+| Ctrl + S | Save       |
+| Ctrl + P | Print      |
 
 |   |   |
 |---|---|
