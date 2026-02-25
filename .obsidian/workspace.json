@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "VBA"
             }
+          },
+          {
+            "id": "32ec3d5683374e48",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.7"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -209,7 +222,7 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "f0578ec91f4e4489",
+  "active": "32ec3d5683374e48",
   "lastOpenFiles": [
     "Coding/Quick-Types/Windows Symbols.md",
     "Obsidian-GitHub-Markdown-Guide.md",
