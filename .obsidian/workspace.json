@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "Windows Symbols"
             }
+          },
+          {
+            "id": "ba86191d24bde759",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.12.4"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -223,7 +235,7 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "32ec3d5683374e48",
+  "active": "ba86191d24bde759",
   "lastOpenFiles": [
     "Coding/Quick-Types/Shortcuts.md",
     "Coding/Quick-Types/Windows Symbols.md",
