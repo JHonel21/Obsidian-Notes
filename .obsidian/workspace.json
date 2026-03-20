@@ -27,28 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Coding/Quick-Types/Windows Symbols.md",
+                "file": "Aya_Healthcare/Interviews/Scott-Bishop-VP/Preparation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Windows Symbols"
-            }
-          },
-          {
-            "id": "ba86191d24bde759",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.12.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.12.4"
+              "title": "Preparation"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -235,14 +223,28 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "ba86191d24bde759",
+  "active": "32ec3d5683374e48",
   "lastOpenFiles": [
-    "Coding/Quick-Types/Shortcuts.md",
+    "Aya_Healthcare/Interviews/Maya-TA.md",
+    "Aya_Healthcare/Interviews/Scott-Bishop-VP/Preparation.md",
+    "Aya_Healthcare/Interviews/CTO-CPO",
+    "Aya_Healthcare/Interviews/Scott-Bishop-VP",
+    "Aya_Healthcare/Interviews/Untitled.md",
     "Coding/Quick-Types/Windows Symbols.md",
-    "Obsidian-GitHub-Markdown-Guide.md",
-    "SCHS/GE-Demo.md",
-    "Architecture/Untitled.md",
+    "Aya_Healthcare/Untitled.md",
+    "Aya_Healthcare/Interviews",
+    "Aya_Healthcare",
+    "Aya_Healthcare/Template1.md",
     "Templates/Template1.md",
+    "Aya_Healthcare",
+    "Templates/Template1 1.md",
+    "Aya-Healthcare/Untitled.md",
+    "Architecture/Untitled.md",
+    "Aya-Healthcare",
+    "SCHS/GE-Demo.md",
+    "SCHS/Onsite-Travel-February-2026.md",
+    "Coding/Quick-Types/Shortcuts.md",
+    "Obsidian-GitHub-Markdown-Guide.md",
     "Architecture",
     "3D-Printing/Printer-and-Filament-Tuning/Extrusion-Multiplier.md",
     "Templates",
@@ -251,7 +253,6 @@
     "3D-Printing/Connecting-to-RPi.md",
     "Coding/Mermaid/Examples/Flowchart-with-4-branched-paths.md",
     "Coding/Mermaid/Examples/Grouped-Physical-Architecture.md",
-    "SCHS/Onsite-Travel-February-2026.md",
     "Coding/Excel-Sheets.md",
     "3D-Printing/Printer-and-Filament-Tuning/Pressure-Advance/Point-6mm-Nozzle_Overture-Glow-PLA.md",
     "3D-Printing/Start gcode",
@@ -259,20 +260,7 @@
     "Coding/Mermaid/Untitled.md",
     "3D Printing/Printer and Filament Tuning/Pressure Advance/0.6mm Nozzle – Overture Glow PLA.md",
     "Coding/AI.md",
-    "SCHS",
-    "Coding/Quick Types/Shortcuts",
-    "Coding/Quick-Types",
-    "3D-Printing/Printer-and-Filament-Tuning/Pressure-Advance",
     "Coding/VBA.md",
-    "3D-Printing/Print-Settings-Reference/Supports.md",
-    "3D-Printing/Print-Settings-Reference",
-    "3D-Printing/Printer-and-Filament-Tuning",
-    "Coding/JSON.md",
-    "3D Printing/3D Printing.md",
-    "Untitled.canvas",
-    "Testing automated push.md",
-    "testing push from wc.md",
-    "Test 1.md",
-    "Welcome.md"
+    "Untitled.canvas"
   ]
 }
