@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Aya_Healthcare/Interviews/CTO-CPO/Solution-Proposal_vs_SOW/Visual-Framework.md",
+                "file": "Aya_Healthcare/Interviews/CTO-CPO/CTO-CPO-Prep.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Visual-Framework"
+              "title": "CTO-CPO-Prep"
             }
           }
         ]
@@ -206,13 +206,14 @@
       "templater-obsidian:Templater": false,
       "voice:Voice read text": false,
       "obsidian-importer:Open Importer": false,
-      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
+      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+      "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
   "active": "32ec3d5683374e48",
   "lastOpenFiles": [
-    "Coding/VBA.md",
     "Aya_Healthcare/Interviews/CTO-CPO/Solution-Proposal_vs_SOW/Visual-Framework.md",
+    "Coding/VBA.md",
     "Aya_Healthcare/Interviews/CTO-CPO/Solution-Proposal_vs_SOW/Solution-Proposal-and-SOW-Differences.md",
     "Aya_Healthcare/Interviews/CTO-CPO/Solution-Proposal_vs_SOW/Solution-Proposal.md",
     "Aya_Healthcare/Interviews/CTO-CPO/Solution-Proposal_vs_SOW/SOW-Example.md",

@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     A[Client Problem / Opportunity] --> B[Solution Proposal]
 
@@ -25,4 +26,5 @@ flowchart TD
     G --> G1[Operational Impact]
     G --> G2[Financial Impact]
     G --> G3[Clinical / UX Impact]
+```
 
