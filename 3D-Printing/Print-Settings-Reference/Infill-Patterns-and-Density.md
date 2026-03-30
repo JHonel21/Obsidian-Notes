@@ -1,10 +1,10 @@
-|   |   |   |   |
-|---|---|---|---|
-|Print Type|Recommended Pattern|Density %|Notes|
-|Strong / Functional Parts (brackets, mounts, tools)|Gyroid or Cubic|20–40% (up to 60% for very high strength)|Best isotropic strength, distributes load evenly. Use higher density for parts under constant stress.|
-|Lightweight Functional (RC planes, cosplay props, big prints)|Honeycomb or Cubic Subdivision|10–20%|Stronger than rectilinear with lower weight. Subdivision saves material by reducing density inside.|
-|General Use / Everyday (non-load prototypes, toys, enclosures)|Grid or Rectilinear|10–20%|Fastest to print, uses less filament. Good “default” option if strength isn’t critical.|
-|Aesthetic / Display Models (figurines, statues, vases)|Concentric (or Grid if hidden)|0–15%|For models just sitting on a shelf. Low density saves filament, concentric gives smoother curved walls.|
-|Top Surface Quality Needed (flat plates, decorative tops)|Concentric / Hilbert Curve|15–20%|Improves top surface appearance. Use enough density so top layers don’t sag.|
-|Large Solid Mechanical Parts (gears, functional cores)|Gyroid or Triangular|40–60%|Needed when layer adhesion + part rigidity is critical. May combine with more perimeters instead of just infill.|
-|Lightweight Supports Under Tops (e.g., lithophanes, cosplay shells)|Cubic Subdivision|5–15%|Just enough to support top layers while saving filament.|
+|                                                                     |                                |                                           |                                                                                                                  |
+| ------------------------------------------------------------------- | ------------------------------ | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Print Type                                                          | Recommended Pattern            | Density %                                 | Notes                                                                                                            |
+| Strong / Functional Parts (brackets, mounts, tools)                 | Gyroid or Cubic                | 20–40% (up to 60% for very high strength) | Best isotropic strength, distributes load evenly. Use higher density for parts under constant stress.            |
+| Lightweight Functional (RC planes, cosplay props, big prints)       | Honeycomb or Cubic Subdivision | 10–20%                                    | Stronger than rectilinear with lower weight. Subdivision saves material by reducing density inside.              |
+| General Use / Everyday (non-load prototypes, toys, enclosures)      | Grid or Rectilinear            | 10–20%                                    | Fastest to print, uses less filament. Good “default” option if strength isn’t critical.                          |
+| Aesthetic / Display Models (figurines, statues, vases)              | Concentric (or Grid if hidden) | 0–15%                                     | For models just sitting on a shelf. Low density saves filament, concentric gives smoother curved walls.          |
+| Top Surface Quality Needed (flat plates, decorative tops)           | Concentric / Hilbert Curve     | 15–20%                                    | Improves top surface appearance. Use enough density so top layers don’t sag.                                     |
+| Large Solid Mechanical Parts (gears, functional cores)              | Gyroid or Triangular           | 40–60%                                    | Needed when layer adhesion + part rigidity is critical. May combine with more perimeters instead of just infill. |
+| Lightweight Supports Under Tops (e.g., lithophanes, cosplay shells) | Cubic Subdivision              | 5–15%                                     | Just enough to support top layers while saving filament.                                                         |

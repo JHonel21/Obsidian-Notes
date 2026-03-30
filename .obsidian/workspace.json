@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Aya_Healthcare/Interviews/CTO-CPO/CTO-CPO-Prep.md",
+                "file": "3D-Printing/Print-Settings-Reference/Infill-Patterns-and-Density.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CTO-CPO-Prep"
+              "title": "Infill-Patterns-and-Density"
             }
           }
         ]
@@ -206,12 +206,12 @@
       "templater-obsidian:Templater": false,
       "voice:Voice read text": false,
       "obsidian-importer:Open Importer": false,
-      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
-      "mermaid-tools:Open Mermaid Toolbar": false
+      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
   "active": "32ec3d5683374e48",
   "lastOpenFiles": [
+    "Aya_Healthcare/Interviews/CTO-CPO/CTO-CPO-Prep.md",
     "Aya_Healthcare/Interviews/CTO-CPO/Solution-Proposal_vs_SOW/Visual-Framework.md",
     "Coding/VBA.md",
     "Aya_Healthcare/Interviews/CTO-CPO/Solution-Proposal_vs_SOW/Solution-Proposal-and-SOW-Differences.md",
@@ -219,7 +219,6 @@
     "Aya_Healthcare/Interviews/CTO-CPO/Solution-Proposal_vs_SOW/SOW-Example.md",
     "Aya_Healthcare/Interviews/CTO-CPO/Solution-Proposal_vs_SOW/Core-SOW-Template.md",
     "Aya_Healthcare/Interviews/CTO-CPO/Solution-Proposal_vs_SOW",
-    "Aya_Healthcare/Interviews/CTO-CPO/CTO-CPO-Prep.md",
     "Aya_Healthcare/Interviews/Scott-Bishop-VP/Untitled.md",
     "Aya_Healthcare/Proposal-SOW-Checklist.md",
     "Aya_Healthcare/Interviews/Scott-Bishop-VP/Staffing-Delivery-Scope/Data-Analytics-Example.md",
