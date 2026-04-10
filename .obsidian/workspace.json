@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "BOM"
             }
+          },
+          {
+            "id": "dec5b121df7cac07",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.12.7"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -209,7 +222,7 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "32ec3d5683374e48",
+  "active": "dec5b121df7cac07",
   "lastOpenFiles": [
     "Inventions/smart-hot-water-tank/Code-v1.md",
     "Inventions/smart-hot-water-tank/BOM.md",
