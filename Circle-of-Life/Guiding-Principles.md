@@ -1,3 +1,3 @@
 - 4/11/2026
-	- 
+	- Neglect makes kids have more emotional problems compared to abuse
 - 4/18/2026
