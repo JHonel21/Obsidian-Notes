@@ -5,5 +5,12 @@
 		- Texting
 		- Facetime
 		- Attending church
-	- The foster parents should act as mentors to the biological parents
+		- Meeting at a park
+		- Inviting them over to have dinner
+	- The foster parents should act as mentors to the biological parents, if applicable
+	- Supporting the bio and foster family relationships follows PREP
+		- **P**lan for visitation
+		- **R**eactions to be expected
+		- **E**xpectations about relationships
+		- **P**revention possibilities
 - 4/18/2026
