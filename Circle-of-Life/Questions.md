@@ -1,1 +1,3 @@
 - How many children would we be able to take in our home, specifically for siblings?
+	- Each child needs their own bed
+	- Different/same sex blood siblings not a problem to share a room
