@@ -14,4 +14,10 @@
 		- **E**xpectations about relationships
 		- **P**revention possibilities
 	- Trying to keep foster children connected with their siblings is extremely important 
+	- Culture
+		- Recognize the child's likes/dislikes, spiritual/faith, family dynamic, etc.
+		- Holidays
+		- Enabling them to do things they like
+		- Retain and/or create scrapbooks and memory items (e.g., trophies, art work, certificates)
+		- 
 - 4/18/2026
