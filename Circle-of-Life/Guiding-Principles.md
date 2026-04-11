@@ -13,4 +13,5 @@
 		- **R**eactions to be expected
 		- **E**xpectations about relationships
 		- **P**revention possibilities
+	- Trying to keep foster children connected with their siblings is extremely important 
 - 4/18/2026
