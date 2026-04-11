@@ -1,3 +1,9 @@
 - 4/11/2026
 	- Neglect makes kids have more emotional problems compared to abuse
+	- Keeping the biological family highly involved, updated, in the know, etc is very important. Some examples would include:
+		- Phone calls
+		- Texting
+		- Facetime
+		- Attending church
+	- The foster parents should act as mentors to the biological parents
 - 4/18/2026
