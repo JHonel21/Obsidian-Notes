@@ -1,3 +1,4 @@
+
 | Component    | Part                           | Est. Cost    |
 | ------------ | ------------------------------ | ------------ |
 | MCU          | XIAO ESP32-S3 (pre-soldered)   | $7-9         |
