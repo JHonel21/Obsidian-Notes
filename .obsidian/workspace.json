@@ -11,10 +11,14 @@
             "id": "d2913c1b6d96ee13",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Obsidian-Docs.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Obsidian-Docs"
             }
           }
         ]
@@ -207,6 +211,8 @@
   },
   "active": "d2913c1b6d96ee13",
   "lastOpenFiles": [
+    "Obsidian-GitHub-Markdown-Guide.md",
+    "Obsidian-Docs.md",
     "3D-Printing/Projects/FGC-9/Tools-Materials-Parts.md",
     "3D-Printing/Projects/FGC-9/Print Tracking.md",
     "3D-Printing/Connecting-to-RPi.md",
@@ -238,8 +244,6 @@
     "Career-Notes/Aya_Healthcare/Proposal-SOW-Checklist.md",
     "Career-Notes/Aya_Healthcare/Interviews/Scott-Bishop-VP/Staffing-Delivery-Scope/Data-Analytics-Example.md",
     "Career-Notes/Aya_Healthcare/Interviews/Scott-Bishop-VP/Staffing-Delivery-Scope/Cybersecurity-Example.md",
-    "Career-Notes/Aya_Healthcare/Interviews/Scott-Bishop-VP/Staffing-Delivery-Scope/Epic-Example.md",
-    "Career-Notes/Aya_Healthcare/Interviews/Scott-Bishop-VP/Staffing-Delivery-Scope/SDS-Summary.md",
     "Career-Notes/Aya_Healthcare/Interviews/Scott-Bishop-VP/Staffing-Delivery-Scope",
     "Career-Notes/Aya_Healthcare/Interviews/CTO-CPO",
     "Career-Notes/Aya_Healthcare/Interviews/Scott-Bishop-VP",
