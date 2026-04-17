@@ -26,12 +26,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Circle-of-Life/Guiding-Principles.md",
+                "file": "Career-Notes/SE-Op/First-call.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Guiding-Principles"
+              "title": "First-call"
             }
           }
         ],
@@ -199,6 +199,23 @@
   },
   "active": "46842275a402b0f4",
   "lastOpenFiles": [
+    "Career-Notes/Untitled.md",
+    "Career-Notes/SE-Op/First-call.md",
+    "Career-Notes/SE-Op",
+    "Circle-of-Life/Guiding-Principles.md",
+    "3D-Printing/Projects/FGC-9/Tools-Materials-Parts.md",
+    "3D-Printing/Projects/FGC-9/Print Tracking.md",
+    "3D-Printing/Projects/FGC-9",
+    "Obsidian-Docs.md",
+    "/Obsidian-Docs.md",
+    "/3D-Printing/Projects/FGC-9/Tools-Materials-Parts.md",
+    "/3D-Printing/Projects/FGC-9/Print Tracking.md",
+    "/3D-Printing/Print-Settings-Reference/Supports.md",
+    "/3D-Printing/Print-Settings-Reference",
+    "/3D-Printing/Projects/FGC-9",
+    "/3D-Printing/Projects",
+    "3D-Printing/Projects",
+    "/3D-Printing",
     "Untitled.base",
     "Inventions/smart-hot-water-tank/BOM.md",
     "Obsidian-GitHub-Markdown-Guide.md",
@@ -207,32 +224,16 @@
     "Inventions/smart-hot-water-tank/Code-v1.md",
     "Inventions/smart-hot-water-tank/Component-Architecture-Diagram.md",
     "Inventions/smart-hot-water-tank",
-    "Inventions",
     "Coding/Mermaid/Examples/Flowchart-with-4-branched-paths.md",
     "Coding/Mermaid/Examples/Grouped-Physical-Architecture.md",
-    "Coding/Mermaid/Examples",
     "Coding/Quick-Types/Shortcuts.md",
     "Coding/Quick-Types/Windows Symbols.md",
-    "Coding/Mermaid",
     "Coding/JSON.md",
     "Coding/VBA.md",
     "Coding/AI.md",
     "Coding/Excel-Sheets.md",
-    "Coding/Quick-Types",
-    "Coding",
     "Architecture/Untitled.md",
-    "Architecture",
     "Career-Notes/Aya_Healthcare/Interviews/Scott-Bishop-VP/Staffing-Delivery-Scope/Cybersecurity-Example.md",
-    "Career-Notes/Aya_Healthcare/Interviews/Scott-Bishop-VP/Staffing-Delivery-Scope/Epic-Example.md",
-    "Career-Notes/Aya_Healthcare/Interviews/Scott-Bishop-VP/Staffing-Delivery-Scope/SDS-Summary.md",
-    "Career-Notes/Aya_Healthcare/Interviews/Scott-Bishop-VP/Staffing-Delivery-Scope/Data-Analytics-Example.md",
-    "Career-Notes/Aya_Healthcare/Interviews/CTO-CPO/Solution-Proposal_vs_SOW/Visual-Framework.md",
-    "Career-Notes/Aya_Healthcare/Interviews/CTO-CPO/Solution-Proposal_vs_SOW/Solution-Proposal-and-SOW-Differences.md",
-    "Career-Notes/Aya_Healthcare/Interviews/CTO-CPO/Solution-Proposal_vs_SOW/Solution-Proposal.md",
-    "Career-Notes/Aya_Healthcare/Interviews/CTO-CPO/Solution-Proposal_vs_SOW/SOW-Example.md",
-    "Career-Notes/Aya_Healthcare/Interviews/CTO-CPO/Solution-Proposal_vs_SOW/Core-SOW-Template.md",
-    "Career-Notes/Aya_Healthcare/Interviews/Scott-Bishop-VP/Preparation.md",
-    "Career-Notes/Aya_Healthcare/Interviews/Scott-Bishop-VP/Staffing-Delivery-Scope",
-    "Career-Notes/Aya_Healthcare/Interviews/CTO-CPO/CTO-CPO-Prep.md"
+    "Career-Notes/Aya_Healthcare/Interviews/Scott-Bishop-VP/Staffing-Delivery-Scope/Epic-Example.md"
   ]
 }
