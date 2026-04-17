@@ -1,4 +1,8 @@
- 
+
+Clearpath 4.5 year startup
+
+
+
 **Open the Call (Set Scope)**
 Before we dive in, I’d like to make sure this is a strong mutual fit. I have a few quick questions on company, role scope, and logistics.
   
