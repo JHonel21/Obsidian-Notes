@@ -67,122 +67,47 @@ What you’re watching
 
 4. Technical Depth
 
-  
-
-  
-
 What are the most complex integrations this role would own?
 
-  
-
 Listen for:
-
-  
 
 - HL7 / FHIR / APIs (good)
 - DICOM routing / imaging workflows (very good)
 - Or just “demos and light config” (weak)
-
-  
-
-  
-
-  
-
-  
-
   
 
 5. Team Structure
 
-  
-
-  
-
 Who does this role report to, and how are responsibilities split between SE, implementation, and support?
-
-  
 
 Red flag
 
-  
-
 - “You’ll wear all hats” with no support structure
-
-  
-
-  
-
-  
-
-  
-
   
 
 6. Compensation (Don’t Skip This)
-
-  
-
   
 
 Can you share the compensation range for base, variable, and equity?
 
-  
-
 If they hesitate:
-
-  
-
 Even a general range is helpful to make sure we’re aligned.
 
   
 
-  
-
-  
-
-  
-
 7. Customers / Credibility
-
-  
-
-  
-
 Can you share a few representative customers or use cases?
 
-  
-
 You’re validating:
-
-  
 
 - Whether the “1,000 facilities” claim is real
 - Whether they actually work with systems like [Epic](chatgpt://generic-entity?number=3) environments
 
-  
-
-  
-
-  
-
-  
-
-  
-
 8. Success Criteria
-
-  
-
-  
 
 What does success look like in the first 6–12 months?
 
-  
-
 This reveals:
-
-  
 
 - Sales quota pressure
 - Implementation backlog
