@@ -1,3 +1,7 @@
+- People:
+	- Dan Ostrow: SVP of tech
+	- Lauren Brown: President 
+	- Jorey 
 - Questions:
 	- Do you primarily rely on Q/R from PACS or do clients push studies to the platform? Is it a combination of the two?
 	- How do you handle environments with inconsistent patient identifier?
