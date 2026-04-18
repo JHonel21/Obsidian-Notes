@@ -21,4 +21,4 @@
 		- Retain and/or create scrapbooks and memory items (e.g., trophies, art work, certificates)
 		- Misunderstandings arise when we use our meanings to make sense of someone else's reality
 - 4/18/2026
-	- 
+	- Always ask consent before physically touching the foster child (e.g., hugging, etc.)
