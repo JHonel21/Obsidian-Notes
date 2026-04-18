@@ -35,8 +35,7 @@
               "title": "Guiding-Principles"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,11 +197,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "46842275a402b0f4",
+  "active": "a8a59187469b125e",
   "lastOpenFiles": [
+    "Circle-of-Life/Guiding-Principles.md",
     "Career-Notes/Clearpath/Second-Call.md",
     "Career-Notes/Clearpath/First-call.md",
-    "Circle-of-Life/Guiding-Principles.md",
     "/Circle-of-Life/Guiding-Principles.md",
     "/Circle-of-Life",
     "/Career-Notes/SE-Op/First-call.md",
