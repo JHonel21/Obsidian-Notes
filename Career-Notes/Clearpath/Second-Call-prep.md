@@ -1,7 +1,11 @@
 - People:
-	- Dan Ostrow: SVP of tech
+	- Daniel Ostrow: SVP of technology 
+		- Been at Clearpath for ~7 months
+		- Took 1 year and 3 months off to parent
+		- Intelerad as chief enterprise architect 
 	- Lauren Brown: President 
-	- Jorey 
+	- Jorey Chernet: CEO
+	- Kamil Rahme: CTO
 - Questions:
 	- Do you primarily rely on Q/R from PACS or do clients push studies to the platform? Is it a combination of the two?
 	- How do you handle environments with inconsistent patient identifier?
