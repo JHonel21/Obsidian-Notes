@@ -24,3 +24,4 @@
 	- Always ask consent before physically touching others (e.g., hugging, etc.)
 	- having a group text with the DHS case worker and Circle of Care assignee is a good strategy to ensure everyone is on the same page
 	- having a “chill zone” can be a good strategy to allow decompression/deescalation 
+	- Ask about CPI sheet when being asked about a potential foster child placement 
