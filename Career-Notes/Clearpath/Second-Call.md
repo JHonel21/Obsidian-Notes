@@ -3,3 +3,6 @@
 		- Built in AI and natural language processing (NLP) to translate rad reports into easy to understand 
 	- ProviderConnect
 	- LegalConnect
+- Medical imaging flows:
+	- Clearpath acts as DICOM node
+	- Q/R: C-FIND to find studies and C-MOVE/C-GET to retrieve images
