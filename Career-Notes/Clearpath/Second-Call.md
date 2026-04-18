@@ -1,3 +1,6 @@
+- Questions:
+	- Do you primarily rely on Q/R from PACS or do clients push studies to the platform? Is it a combination of the two?
+	- How do you handle environments with inconsistent patient identifier?
 - Products:
 	- PatientConnect
 		- Built in AI and natural language processing (NLP) to translate rad reports into easy to understand 
@@ -6,3 +9,4 @@
 - Medical imaging flows:
 	- Clearpath acts as DICOM node
 	- Q/R: C-FIND to find studies and C-MOVE/C-GET to retrieve images
+	- Surfaced for patients/providers
