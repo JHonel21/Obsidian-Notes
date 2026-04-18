@@ -1,4 +1,5 @@
 - Products:
 	- PatientConnect
+		- Built in AI and natural language processing (NLP) to translate rad reports into easy to understand 
 	- ProviderConnect
 	- LegalConnect
