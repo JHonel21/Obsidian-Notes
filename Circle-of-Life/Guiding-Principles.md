@@ -21,4 +21,6 @@
 		- Retain and/or create scrapbooks and memory items (e.g., trophies, art work, certificates)
 		- Misunderstandings arise when we use our meanings to make sense of someone else's reality
 - 4/18/2026
-	- Always ask consent before physically touching the foster child (e.g., hugging, etc.)
+	- Always ask consent before physically touching others (e.g., hugging, etc.)
+	- having a group text with the DHS case worker and Circle of Care assignee is a good strategy to ensure everyone is on the same page
+	- 
