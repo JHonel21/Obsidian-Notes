@@ -20,6 +20,8 @@
 	- Q/R: C-FIND to find studies and C-MOVE/C-GET to retrieve images
 	- Surfaced for patients/providers
 
+Broken link: https://www.myclearpath.com/solutions/patients
+
 What He’s Likely to Ask You
 
 1. “Walk me through a complex integration you’ve worked on”
