@@ -7,9 +7,7 @@
 	- Lauren Brown: President 
 	- Jorey Chernet: CEO
 	- Kamil Rahme: CTO
-- Questions:
-	- Do you primarily rely on Q/R from PACS or do clients push studies to the platform? Is it a combination of the two?
-	- How do you handle environments with inconsistent patient identifier?
+
 - Products:
 	- PatientConnect
 		- Built in AI and natural language processing (NLP) to translate rad reports into easy to understand 
@@ -21,6 +19,30 @@
 	- Surfaced for patients/providers
 
 Broken link: https://www.myclearpath.com/solutions/patients
+
+Questions to expect from him
+The domain stuff will be light given he already knows your background. He’ll probably focus on:
+	•	What have you been doing at SCHS and what does your day-to-day actually look like
+	•	Why are you open to leaving a stable health system job
+	•	Have you worked in a startup or early-stage environment before and how did you handle ambiguity
+	•	What’s your experience with the sales side, are you comfortable in front of customers during pre-sales
+	•	How do you approach an integration discovery with a customer IT team
+	•	What does a good SE function look like to you and how would you build it
+That last one is worth preparing for. At a 57-person company hiring an SE, he may be asking you to help define what the role becomes.
+What you should ask him
+On the business:
+	•	How is Clearpath funded and are you profitable or growth-stage
+	•	What does the customer base look like today, health systems vs. imaging centers vs. both
+	•	What’s the sales motion, inbound, outbound, channel partners
+	•	Where are the biggest integration friction points you’re hitting with customers right now
+On the role:
+	•	What does success look like in the first 90 days
+	•	Is this the first dedicated SE hire or are you backfilling
+	•	Who would I be working most closely with day to day
+	•	How does product feedback from the SE actually get into the roadmap
+On growth:
+	•	What’s the trajectory you’re building toward, another acquisition like Ambra or independent scale
+	•	What does the SE function look like in two to three years if things go well
 
 What He’s Likely to Ask You
 
