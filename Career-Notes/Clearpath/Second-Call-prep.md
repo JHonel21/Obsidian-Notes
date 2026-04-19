@@ -2,7 +2,8 @@
 	- Daniel Ostrow: SVP of technology 
 		- Been at Clearpath for ~7 months
 		- Took 1 year and 3 months off to parent
-		- Intelerad as chief enterprise architect 
+		- Intelerad as chief enterprise architect 2 years and 11 months
+		- Ambra Health 11 years 6 months from inception to sale to Intelerad
 	- Lauren Brown: President 
 	- Jorey Chernet: CEO
 	- Kamil Rahme: CTO
