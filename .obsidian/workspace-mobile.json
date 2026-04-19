@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Productivity/AI-Tools.md",
+                "file": "Productivity/AI-Details-Differences.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AI-Tools"
+              "title": "AI-Details-Differences"
             }
           },
           {
@@ -199,8 +199,9 @@
   },
   "active": "a8a59187469b125e",
   "lastOpenFiles": [
-    "Coding/VBA.md",
     "Productivity/AI-Tools.md",
+    "Productivity/AI-Details-Differences.md",
+    "Coding/VBA.md",
     "Coding/AI.md",
     "Productivity",
     "Career-Notes/Clearpath/Second-Call-prep.md",
@@ -233,7 +234,6 @@
     "Coding/Mermaid/Examples/Flowchart-with-4-branched-paths.md",
     "Coding/Mermaid/Examples/Grouped-Physical-Architecture.md",
     "Coding/Quick-Types/Shortcuts.md",
-    "Coding/Quick-Types/Windows Symbols.md",
-    "Coding/JSON.md"
+    "Coding/Quick-Types/Windows Symbols.md"
   ]
 }

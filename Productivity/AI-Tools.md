@@ -1,0 +1,8 @@
+- Llama
+- Claude
+- ChatGPT
+- Perplexity
+- Gemini
+- Manus
+- NotebookLM
+- Wispr Flow
