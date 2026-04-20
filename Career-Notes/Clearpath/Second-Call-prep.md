@@ -44,6 +44,13 @@ On growth:
 	•	What’s the trajectory you’re building toward, another acquisition like Ambra or independent scale
 	•	What does the SE function look like in two to three years if things go well
 
+He probably won't say "tell me about your QA experience" directly. It'll come out as situational questions like:
+
+- "Walk me through what happens after a contract is signed. How do you make sure the customer gets what was promised?"
+- "Have you ever found a gap between what was scoped and what actually got delivered? How did you handle it?"
+- "How do you validate that an integration is working correctly in a live environment?"
+- "What does done look like to you on an implementation?"
+
 What He’s Likely to Ask You
 
 1. “Walk me through a complex integration you’ve worked on”
