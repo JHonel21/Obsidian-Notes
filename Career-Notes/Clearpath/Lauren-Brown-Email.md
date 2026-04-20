@@ -1,0 +1,1 @@
+She is the President of Clearpath and she wants Daniel to assess my QA capabilities
