@@ -1,0 +1,18 @@
+.markdown-rendered table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.markdown-rendered th {
+  background-color: var(--background-secondary);
+  font-weight: 600;
+}
+
+.markdown-rendered tr:nth-child(even) {
+  background-color: var(--background-secondary-alt);
+}
+
+.markdown-rendered td, .markdown-rendered th {
+  padding: 6px 12px;
+  border: 1px solid var(--background-modifier-border);
+}

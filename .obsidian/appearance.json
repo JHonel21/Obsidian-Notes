@@ -1,6 +1,9 @@
 {
-  "cssTheme": "Things",
+  "cssTheme": "Minimal",
   "interfaceFontFamily": "Arial",
   "textFontFamily": "Arial",
-  "baseFontSize": 18
+  "baseFontSize": 18,
+  "enabledCssSnippets": [
+    "line-width-max-width"
+  ]
 }
