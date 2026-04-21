@@ -1,1 +1,6 @@
-{}
+{
+  "cssTheme": "Things",
+  "interfaceFontFamily": "Arial",
+  "textFontFamily": "Arial",
+  "baseFontSize": 18
+}
