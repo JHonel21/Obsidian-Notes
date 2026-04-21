@@ -4,6 +4,8 @@
   "textFontFamily": "Arial",
   "baseFontSize": 18,
   "enabledCssSnippets": [
-    "line-width-max-width"
+    "line-width-max-width",
+    "highlight-active",
+    "table-styling"
   ]
 }
