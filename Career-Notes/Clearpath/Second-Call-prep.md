@@ -11,21 +11,20 @@
 - Products:
 	- PatientConnect
 		- Built in AI and natural language processing (NLP) to translate rad reports into easy to understand 
-		- PatientConnect
-	- The core product and likely their highest-volume module. It solves the CD fulfillment problem for the patient relationship.
-	- How it works: Clearpath auto-queries PACS, RIS, and other systems to identify matching records when a patient submits a request through the portal, then fulfills digitally via email, a printable patient access page, or optionally burns a disc if a hard copy is still required.  Facilities can configure automated release rules by department or location, so imaging can go to the patient without staff intervention once the study is finalized.
-	- On the patient side, patients can store records in Clearpath’s cloud platform and grant granular sharing permissions at the individual imaging study level to providers or family members. 
-	- The disc burn option is notable. It’s a bridge for facilities that aren’t ready to go fully digital or have edge cases requiring physical media, without sacrificing the automated workflow for the majority of requests.
+		- The core product and likely their highest-volume module. It solves the CD fulfillment problem for the patient relationship.
+		- How it works: Clearpath auto-queries PACS, RIS, and other systems to identify matching records when a patient submits a request through the portal, then fulfills digitally via email, a printable patient access page, or optionally burns a disc if a hard copy is still required.  Facilities can configure automated release rules by department or location, so imaging can go to the patient without staff intervention once the study is finalized.
+		- On the patient side, patients can store records in Clearpath’s cloud platform and grant granular sharing permissions at the individual imaging study level to providers or family members. 
+		- The disc burn option is notable. It’s a bridge for facilities that aren’t ready to go fully digital or have edge cases requiring physical media, without sacrificing the automated workflow for the majority of requests.
 	- ProviderConnect
 		- The provider-to-provider and referring physician module. It solves the care coordination gap when a patient is referred externally or seen across multiple facilities.
-		It transfers original-quality DICOM to any internal or external physician, regardless of whether they’re in-network or out-of-network, and can automatically retrieve and send prior studies when referring a patient to another provider or facility. 
-		The key differentiator here is the prior retrieval automation. Instead of a coordinator manually hunting for relevant priors before an appointment, Clearpath auto-retrieves relevant prior imaging studies before each appointment  based on configurable logic. That’s a real workflow problem in radiology that most facilities handle with manual labor or not at all.
-		The out-of-network capability matters too. Most PACS-native sharing tools are constrained to connected nodes. Clearpath’s value here is that the recipient doesn’t need to be on the same network or use the same PACS.
+		- It transfers original-quality DICOM to any internal or external physician, regardless of whether they’re in-network or out-of-network, and can automatically retrieve and send prior studies when referring a patient to another provider or facility. 
+		- The key differentiator here is the prior retrieval automation. Instead of a coordinator manually hunting for relevant priors before an appointment, Clearpath auto-retrieves relevant prior imaging studies before each appointment  based on configurable logic. That’s a real workflow problem in radiology that most facilities handle with manual labor or not at all.
+		- The out-of-network capability matters too. Most PACS-native sharing tools are constrained to connected nodes. Clearpath’s value here is that the recipient doesn’t need to be on the same network or use the same PACS.
 	- LegalConnect
-	- The ROI module specifically for legal and insurance requestors. It solves the subpoena and third-party records request workflow, which is historically one of the most manual, paper-heavy processes in HIM.
-It automatically queries and retrieves records from PACS, RIS, and billing systems in a single step, and handles payment collection at statutory limits or custom rates set by the facility. 
-The payment collection piece is a meaningful operational differentiator. Legal ROI has historically involved mailing invoices, receiving checks, and reconciling manually. Clearpath owns that transaction digitally, which removes several steps and eliminates the accounts receivable lag.
-One large imaging chain CEO noted it eliminated costs associated with subpoena delivery, status calls, checks in the mail, and disc burning while simultaneously increasing revenue , which reflects the dual-sided value: cost reduction and faster payment collection.
+		- The ROI module specifically for legal and insurance requestors. It solves the subpoena and third-party records request workflow, which is historically one of the most manual, paper-heavy processes in HIM.
+		- It automatically queries and retrieves records from PACS, RIS, and billing systems in a single step, and handles payment collection at statutory limits or custom rates set by the facility. 
+		- The payment collection piece is a meaningful operational differentiator. Legal ROI has historically involved mailing invoices, receiving checks, and reconciling manually. Clearpath owns that transaction digitally, which removes several steps and eliminates the accounts receivable lag.
+		- One large imaging chain CEO noted it eliminated costs associated with subpoena delivery, status calls, checks in the mail, and disc burning while simultaneously increasing revenue , which reflects the dual-sided value: cost reduction and faster payment collection.
 - Medical imaging flows:
 	- Clearpath acts as DICOM node
 	- Q/R: C-FIND to find studies and C-MOVE/C-GET to retrieve images
@@ -41,6 +40,7 @@ The domain stuff will be light given he already knows your background. He’ll p
 	•	What’s your experience with the sales side, are you comfortable in front of customers during pre-sales
 	•	How do you approach an integration discovery with a customer IT team
 	•	What does a good SE function look like to you and how would you build it
+		A good SE function is the connective tissue between sales, product, and the customer. Pre-sales it's making sure what gets sold is actually deliverable. Post-sales it's making sure what was delivered matches what was sold and feeding that gap analysis back into the product. At a company this size the SE also has to be a product expert internally, because engineering and customer success are going to lean on that seat when complex issues surface. I'd start by documenting the integration patterns I'm seeing repeatedly, build a discovery framework around Clearpath's most common customer environments, and create validation checklists that make go-live more repeatable as the team scales.
 That last one is worth preparing for. At a 57-person company hiring an SE, he may be asking you to help define what the role becomes.
 What you should ask him
 On the business:
