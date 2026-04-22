@@ -44,6 +44,7 @@ The domain stuff will be light given he already knows your background. He’ll p
 	•	What does a good SE function look like to you and how would you build it
 		A good SE function is the connective tissue between sales, product, and the customer. Pre-sales it's making sure what gets sold is actually deliverable. Post-sales it's making sure what was delivered matches what was sold and feeding that gap analysis back into the product. At a company this size the SE also has to be a product expert internally, because engineering and customer success are going to lean on that seat when complex issues surface. I'd start by documenting the integration patterns I'm seeing repeatedly, build a discovery framework around Clearpath's most common customer environments, and create validation checklists that make go-live more repeatable as the team scales.
 That last one is worth preparing for. At a 57-person company hiring an SE, he may be asking you to help define what the role becomes.
+
 What you should ask him
 On the business:
 	•	How is Clearpath funded and are you profitable or growth-stage
