@@ -35,8 +35,10 @@ Broken link: https://www.myclearpath.com/solutions/patients
 Questions to expect from him
 The domain stuff will be light given he already knows your background. He’ll probably focus on:
 	•	What have you been doing at SCHS and what does your day-to-day actually look like
+		I built the SA function there from the ground up and I'm proud of that work. But the trajectory I want, moving toward enterprise architecture and being part of something that's actively scaling, isn't available there in the near term. When I saw Clearpath and understood who was building it, it felt like the right time to make a move into a role where I can have real impact.
 	•	Why are you open to leaving a stable health system job
 	•	Have you worked in a startup or early-stage environment before and how did you handle ambiguity
+		That's basically been my entire role at SCHS. I was hired to build the SA function from scratch with no inherited framework, no templates, and no predecessor to hand things off from. I built the evaluation methodology, the SAD format, the stakeholder communication approach, all of it from zero. I'm comfortable operating without guardrails as long as I understand the outcome I'm working toward.
 	•	What’s your experience with the sales side, are you comfortable in front of customers during pre-sales
 	•	How do you approach an integration discovery with a customer IT team
 	•	What does a good SE function look like to you and how would you build it
