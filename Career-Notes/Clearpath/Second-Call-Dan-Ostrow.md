@@ -27,6 +27,7 @@ On the business:
 		Blackbox brute Royal RIS, Konica, Fuji, Abbottox, Billing imagine, 
 On the role:
 	•	What does success look like in the first 90 days
+		Helping get into a state of stability in terms of post go-live implementation validation. Post release validation
 	•	Is this the first dedicated SE hire or are you backfilling
 	•	Who would I be working most closely with day to day
 On growth:
