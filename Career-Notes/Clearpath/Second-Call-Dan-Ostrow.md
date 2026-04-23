@@ -10,6 +10,9 @@
 
 Notes:
 - Products: PatientConnect, ProviderConnect, LegalConnect
+- Clearpath started out after authentic4D
+- Clearpath connecter is the same as Gateway and hosted in AWS
+- Role: pre-sales, post implementation phase reviewing what is implemented to ensure what was built is what was sold, QA
 
 
 On the business:
