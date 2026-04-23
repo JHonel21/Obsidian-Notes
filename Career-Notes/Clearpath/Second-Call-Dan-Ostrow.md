@@ -14,6 +14,7 @@ Notes:
 - Clearpath connecter is the same as Gateway and hosted in AWS
 - Role: pre-sales, post implementation phase reviewing what is implemented to ensure what was built is what was sold, QA
 - Pre-sales function would be essentially new
+- Tara and implementation team work on validation
 
 
 On the business:
