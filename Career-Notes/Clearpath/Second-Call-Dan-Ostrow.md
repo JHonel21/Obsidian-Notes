@@ -9,15 +9,19 @@
 	- Kamil Rahme: CTO
 
 Notes:
-- Products: PatientConnect, ProviderConnect, LegalConnect
+- Products: PatientConnect, ProviderConnect, LegalConnect (main product)
 - Clearpath started out after authentic4D
 - Clearpath connecter is the same as Gateway and hosted in AWS
 - Role: pre-sales, post implementation phase reviewing what is implemented to ensure what was built is what was sold, QA
+- Pre-sales function would be essentially new
 
 
 On the business:
 	•	How is Clearpath funded and are you profitable or what's the growth-stage
+		CEO is the funder and owns hedge fund
+			Lauren 
 	•	What does the customer base look like today, health systems vs. imaging centers vs. both
+		UHS and HCA
 	•	Where are the biggest integration friction points you’re hitting with customers right now
 On the role:
 	•	What does success look like in the first 90 days
