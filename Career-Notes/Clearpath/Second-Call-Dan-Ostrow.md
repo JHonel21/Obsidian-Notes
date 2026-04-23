@@ -23,6 +23,7 @@ On the business:
 	•	What does the customer base look like today, health systems vs. imaging centers vs. both
 		UHS and HCA
 	•	Where are the biggest integration friction points you’re hitting with customers right now
+		Blackbox brute Royal RIS, Konica, Fuji, Abbottox, Billing imagine, 
 On the role:
 	•	What does success look like in the first 90 days
 	•	Is this the first dedicated SE hire or are you backfilling
@@ -30,3 +31,5 @@ On the role:
 On growth:
 	•	What’s the trajectory you’re building toward, another acquisition like Ambra or independent scale
 	•	What does the SE function look like in two to three years if things go well
+
+Travel would be limited. RSNA, RBMA, no HIMSS,
