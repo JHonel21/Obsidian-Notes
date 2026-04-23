@@ -35,3 +35,10 @@ On growth:
 	•	What does the SE function look like in two to three years if things go well
 
 Travel would be limited. RSNA, RBMA, no HIMSS,
+
+Salary will be checking with Lauren.
+Bonuses are based on if we've had a good year and end of year
+Benefits are all there and use united for everything
+May be an equity component
+401k with no match
+Then in the next few weeks will see who moves on to meet with Lauren, which is who this role reports to
