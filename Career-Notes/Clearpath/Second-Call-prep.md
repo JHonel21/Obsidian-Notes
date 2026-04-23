@@ -53,7 +53,7 @@ That last one is worth preparing for. At a 57-person company hiring an SE, he ma
 
 What you should ask him
 On the business:
-	•	How is Clearpath funded and are you profitable or growth-stage
+	•	How is Clearpath funded and are you profitable or what's the growth-stage
 	•	What does the customer base look like today, health systems vs. imaging centers vs. both
 	•	Where are the biggest integration friction points you’re hitting with customers right now
 On the role:
