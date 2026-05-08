@@ -1,0 +1,17 @@
+Testing 5/6/2026
+- v1: 
+	- Extruder Temp: 255°C
+	- 1st layer Bed Temp: 80°C
+	- After 1st layer Bed Temp: 75°C
+	- PA: 0.075
+	- Retraction Distance: 4 mm
+	- Retraction Rate: 45 mm/s
+	- EM: 0.98
+- v2: 
+	- Extruder Temp: 255°C
+	- 1st layer Bed Temp: 80°C
+	- After 1st layer Bed Temp: 75°C
+	- PA: 0.075
+	- Retraction Distance: 5 mm
+	- Retraction Rate: 50 mm/s
+	- EM: 0.97
