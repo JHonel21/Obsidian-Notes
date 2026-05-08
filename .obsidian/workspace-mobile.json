@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Career-Notes/Clearpath/Second-Call-prep.md",
+                "file": "Circle-of-Life/May-8-2026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Second-Call-prep"
+              "title": "May-8-2026"
             }
           },
           {
@@ -197,8 +197,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "11826ffc876a93b6",
+  "active": "a8a59187469b125e",
   "lastOpenFiles": [
+    "Career-Notes/Clearpath/Second-Call-prep.md",
+    "Circle-of-Life/May-8-2026.md",
     "/Career-Notes/Clearpath/Second-Call-prep.md",
     "/Career-Notes/Clearpath/Second-Call-Dan-Ostrow.md",
     "Career-Notes/Clearpath/Second-Call-Dan-Ostrow.md",
@@ -218,7 +220,6 @@
     "Coding/VBA.md",
     "Coding/AI.md",
     "Productivity",
-    "Career-Notes/Clearpath/Second-Call-prep.md",
     "Circle-of-Life/Guiding-Principles.md",
     "Career-Notes/Clearpath/First-call.md",
     "/Circle-of-Life/Guiding-Principles.md",
@@ -233,7 +234,6 @@
     "Obsidian-Docs.md",
     "/Obsidian-Docs.md",
     "/3D-Printing/Projects/FGC-9/Tools-Materials-Parts.md",
-    "/3D-Printing/Projects/FGC-9/Print Tracking.md",
-    "/3D-Printing/Print-Settings-Reference/Supports.md"
+    "/3D-Printing/Projects/FGC-9/Print Tracking.md"
   ]
 }
