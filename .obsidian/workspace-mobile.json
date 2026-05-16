@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Circle-of-Life/May-8-2026.md",
+                "file": "Stocks/Core Order Types.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "May-8-2026"
+              "title": "Core Order Types"
             }
           },
           {
@@ -199,6 +199,8 @@
   },
   "active": "a8a59187469b125e",
   "lastOpenFiles": [
+    "Circle-of-Life/May-8-2026.md",
+    "Stocks/Core Order Types.md",
     "3D-Printing/Printer-and-Filament-Tuning/Temp-PA-Retraction-EM/Point-6mm-Nozzle_Overture-PETG-Black.md",
     "3D-Printing/Printer-and-Filament-Tuning/Temp-PA-Retraction-EM/Point-6mm-Nozzle_Overture-Glow-PLA.md",
     "3D-Printing/Printer-and-Filament-Tuning/Temp-PA-Retraction-EM",
@@ -213,7 +215,6 @@
     "/3D-Printing/Printer-and-Filament-Tuning",
     "/3D-Printing",
     "Career-Notes/Clearpath/Second-Call-prep.md",
-    "Circle-of-Life/May-8-2026.md",
     "/Career-Notes/Clearpath/Second-Call-prep.md",
     "/Career-Notes/Clearpath/Second-Call-Dan-Ostrow.md",
     "Career-Notes/Clearpath/Second-Call-Dan-Ostrow.md",
@@ -233,7 +234,6 @@
     "Circle-of-Life/Guiding-Principles.md",
     "Career-Notes/Clearpath/First-call.md",
     "/Circle-of-Life/Guiding-Principles.md",
-    "/Career-Notes/SE-Op/First-call.md",
-    "Career-Notes/Untitled.md"
+    "/Career-Notes/SE-Op/First-call.md"
   ]
 }
