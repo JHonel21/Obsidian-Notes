@@ -1,4 +1,4 @@
-
+implementation and product needs. QA is big area of focus
 
 **Questions to ask her**
 
