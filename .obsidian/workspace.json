@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Stocks/Dividends.md",
+                "file": "Career-Notes/Clearpath/Third-Call.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dividends"
+              "title": "Third-Call"
             }
           }
         ]
@@ -211,9 +211,11 @@
   },
   "active": "d2913c1b6d96ee13",
   "lastOpenFiles": [
+    "Stocks/Dividends.md",
+    "Career-Notes/Clearpath/Third-Call.md",
+    "Stocks/Relative-Strength-Index_RSI.md",
     "Stocks/Core Order Types.md",
     "3D-Printing/Printer-and-Filament-Tuning/Temp-PA-Retraction-EM/Point-6mm-Nozzle_Overture-PETG-Black.md",
-    "Stocks/Dividends.md",
     "Stocks",
     "Circle-of-Life/May-8-2026.md",
     "3D-Printing/Printer-and-Filament-Tuning/Extrusion-Multiplier.md",
@@ -242,8 +244,6 @@
     "3D-Printing/Projects/FGC-9",
     "3D-Printing/Print-Settings-Reference/Layer-Counts.md",
     "3D-Printing/Projects",
-    "3D-Printing/Print-Settings-Reference/Infill-Patterns-and-Density.md",
-    "3D-Printing/Print-Settings-Reference/Supports.md",
     "Circle-of-Life",
     "Inventions/smart-hot-water-tank",
     "Inventions",
