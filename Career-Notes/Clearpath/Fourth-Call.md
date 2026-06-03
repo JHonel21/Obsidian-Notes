@@ -11,6 +11,10 @@ Notes:
 On the implementation handoff
 - What does the current handoff from sales to implementation look like today, and where does it break down most often?
 - **What information do you wish you had at the start of an implementation that you typically don’t get?**
+	- Scope is defined to a certain level but don't have SOW's, so doing what they want
+	- Having custom solutions could be a good thing I help with
+	- Vaporware sales caused issues
+	- Defined sprint cycles now
 - What does a good implementation kickoff look like versus one that starts behind?
 
 On the customer environments
