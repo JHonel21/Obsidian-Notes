@@ -2,6 +2,7 @@ Tara Alfano: Director of implementation
 
 Notes:
 - Wearing multiple hats of product, post-sales, implementation, with SE title
+- Cto is husbands best friend
 
 On the implementation handoff
 - What does the current handoff from sales to implementation look like today, and where does it break down most often?
