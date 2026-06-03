@@ -3,6 +3,10 @@ Tara Alfano: Director of implementation
 Notes:
 - Wearing multiple hats of product, post-sales, implementation, with SE title
 - Cto is husbands best friend
+- 401k not matching
+- Bonus structure not defined
+- United benefits with PPO or high deductible
+- PTO 25 days annually, with built in major national holidays
 
 On the implementation handoff
 - What does the current handoff from sales to implementation look like today, and where does it break down most often?
