@@ -1,4 +1,4 @@
-Tara Alfano: Director of implementation 
+Tara Alfano: Director of implementation
 
 On the implementation handoff
 - What does the current handoff from sales to implementation look like today, and where does it break down most often?
