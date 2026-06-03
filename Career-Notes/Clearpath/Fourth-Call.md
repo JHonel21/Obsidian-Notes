@@ -14,7 +14,8 @@ On the implementation handoff
 	- Scope is defined to a certain level but don't have SOW's, so doing what they want
 	- Having custom solutions could be a good thing I help with
 	- Vaporware sales caused issues
-	- Defined sprint cycles now
+	- Defined sprint cycles now with Marissa as VP of product
+	- Goal to beat Powershare/InteleShare? Yes
 - What does a good implementation kickoff look like versus one that starts behind?
 
 On the customer environments
