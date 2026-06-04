@@ -7,6 +7,7 @@ Notes:
 - Small and mighty team
 - Tons of work to do and a lot of smart people
 - Think about job title and what I'm wanting job responsibilities
+- Tom with HR to likely 
 
 Top Priority - Ask These No Matter What
 1. What drew you to Clearpath and what have your first few weeks told you about where the biggest opportunities are?
