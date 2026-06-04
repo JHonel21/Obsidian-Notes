@@ -1,3 +1,5 @@
+Northwestern relationship turned around with implementation and Failover to round robin solution, pro sports leagues relationship and transition to support, cookbook creation and refinement, epic_patient_lookup_info query, NYP millions of API calls, breaking the platform with study_duplicate, UCSF Epic code blue, MSKCC customized build, 
+
 Top Priority - Ask These No Matter What
 1. What drew you to Clearpath and what have your first few weeks told you about where the biggest opportunities are?
 2. From your seat, where are the biggest gaps right now between what the product does and what customers are actually asking for?
