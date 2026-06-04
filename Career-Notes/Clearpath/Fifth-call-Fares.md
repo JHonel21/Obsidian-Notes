@@ -11,7 +11,7 @@ Notes:
 Top Priority - Ask These No Matter What
 1. What drew you to Clearpath and what have your first few weeks told you about where the biggest opportunities are?
 	1. Current work at InteleShare was stable
-	2. Clearpath orchestration workflows
+	2. Clearpath orchestration workflows were exciting and getting to build new technology
 2. From your seat, where are the biggest gaps right now between what the product does and what customers are actually asking for?
 3. What does the current QA process look like for new feature releases and where does it break down when things hit live customer environments?
 4. From a development perspective, what would the SE role need to do well to make your team’s job easier?
