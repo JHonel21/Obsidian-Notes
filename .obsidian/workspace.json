@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Career-Notes/Clearpath/Fourth-Call.md",
+                "file": "Career-Notes/Clearpath/Fifth-call-Fares.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fourth-Call"
+              "title": "Fifth-call-Fares"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "d1f959f867f175b3",
@@ -191,8 +190,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -212,10 +210,10 @@
   },
   "active": "d2913c1b6d96ee13",
   "lastOpenFiles": [
+    "Career-Notes/Clearpath/Fourth-Call.md",
     "Career-Notes/Clearpath/Fifth-call-Fares.md",
     "Career-Notes/Clearpath/Third-Call.md",
     "Stocks/Core Order Types.md",
-    "Career-Notes/Clearpath/Fourth-Call.md",
     "Stocks/Dividends.md",
     "Stocks/Relative-Strength-Index_RSI.md",
     "3D-Printing/Printer-and-Filament-Tuning/Temp-PA-Retraction-EM/Point-6mm-Nozzle_Overture-PETG-Black.md",
