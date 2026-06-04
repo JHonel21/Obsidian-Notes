@@ -1,7 +1,16 @@
 Northwestern relationship turned around with implementation and Failover to round robin solution, pro sports leagues relationship and transition to support, cookbook creation and refinement, epic_patient_lookup_info query, NYP millions of API calls, breaking the platform with study_duplicate, UCSF Epic code blue, MSKCC customized build, 
 
+Notes:
+- Florida
+- He is leading the engineering team
+- Authentic Inc originally that started LegalConnect
+- Small and mighty team
+- Tons of work to do and a lot of smart people
+
 Top Priority - Ask These No Matter What
 1. What drew you to Clearpath and what have your first few weeks told you about where the biggest opportunities are?
+	1. Current work at InteleShare was stable
+	2. Clearpath orchestration workflows
 2. From your seat, where are the biggest gaps right now between what the product does and what customers are actually asking for?
 3. What does the current QA process look like for new feature releases and where does it break down when things hit live customer environments?
 4. From a development perspective, what would the SE role need to do well to make your team’s job easier?
