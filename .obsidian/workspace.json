@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Career-Notes/Aya_Healthcare/Proposal-SOW-Checklist.md",
+                "file": "Circle-of-Life/May-8-2026.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Proposal-SOW-Checklist"
+              "title": "May-8-2026"
             }
           }
         ]
@@ -211,6 +211,8 @@
   },
   "active": "d2913c1b6d96ee13",
   "lastOpenFiles": [
+    "Career-Notes/SCHS/Onsite-Travel-February-2026.md",
+    "Career-Notes/Aya_Healthcare/Proposal-SOW-Checklist.md",
     "Stocks/Core Order Types.md",
     "Career-Notes/Clearpath/Fifth-call-Fares.md",
     "Career-Notes/Clearpath/Fourth-Call.md",
@@ -240,8 +242,6 @@
     "Career-Notes/SE-Op",
     "Obsidian-GitHub-Markdown-Guide.md",
     "3D-Printing/Projects/FGC-9/Tools-Materials-Parts.md",
-    "3D-Printing/Projects/FGC-9/Print Tracking.md",
-    "3D-Printing/Connecting-to-RPi.md",
     "3D-Printing/Projects/FGC-9",
     "3D-Printing/Projects",
     "Circle-of-Life",
