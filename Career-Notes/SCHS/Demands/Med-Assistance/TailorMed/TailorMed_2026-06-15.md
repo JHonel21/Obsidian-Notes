@@ -1,20 +1,24 @@
 ---
 type: vendor-evaluation
-vendor: Untitled
+vendor: "TailorMed"
 status: In Progress
 created: 2026-06-15
 last_reviewed: 2026-06-15
+meeting_date: 2026-06-15
 tags:
   - vendor-eval
   - enterprise-architecture
 ---
 
-# Vendor Evaluation: Untitled
+# Vendor Evaluation: TailorMed
 
 ## 📋 Executive Summary
 * **Business Objective:** Brief description of the problem this vendor solves.
 * **Architecture Alignment:** High-level statement on fit with existing infrastructure and application ecosystem.
-* **Recommendation Matrix:** | Evaluation Pillar | Score (1-5) | Key Risk / Highlight |
+
+### Recommendation Matrix
+
+| Evaluation Pillar | Score (1-5) | Key Risk / Highlight |
 | :--- | :---: | :--- |
 | Fit with Architecture | | |
 | Standards Compliance | | |
@@ -49,6 +53,7 @@ tags:
 * **Standards Supported:** (HL7 v2, FHIR R4, DICOM, X12)
 * **Integration Method:** (Real-time Web Services / Batch SFTP / Message Queue)
 
+
 ### System Context Diagram (Mermaid)
 ```mermaid
 graph LR
@@ -67,6 +72,7 @@ graph LR
     style SSO fill:#dfd,stroke:#333,stroke-width:2px
 ```
 
+
 ### Technical Dependencies
 - **Hosting Model:** (SaaS / Private Cloud / On-Premise VM)
 - **Client Requirements:** (Web browser / Citrix / Mobile App / Native OS)
@@ -80,21 +86,18 @@ graph LR
     
 
 ## 💰 Total Cost of Ownership (TCO)
-
 > [!NOTE]
-> 
 > Projections should look at a 3-to-5 year window to account for scaling costs and implementation fatigue.
 
-### Financial Breakdown
 
+### Financial Breakdown
 - **Implementation Fee (Year 1 One-time):** $0.00
 - **Annual Subscription / Licensing:** $0.00
 - **Internal Resource Requirements:** (FTE hours for Implementation Management and Biomedical/IT engineering)
 - **Interface / Custom Development Fees:** $0.00
-    
+
 
 ### 5-Year Projection
-
 |**Cost Category**|**Year 1**|**Year 2**|**Year 3**|**Year 4**|**Year 5**|
 |---|---|---|---|---|---|
 |**Licensing/SaaS**||||||
@@ -102,8 +105,8 @@ graph LR
 |**Infrastructure / Compute**||||||
 |**Annual TCO**|**$0.00**|**$0.00**|**$0.00**|**$0.00**|**$0.00**|
 
-## 📝 Next Steps & Action Items
 
+## 📝 Next Steps & Action Items
 - [ ] Schedule technical deep dive with the vendor integration engineer.
 - [ ] Submit SOC 2 Type II and architecture overview to Infosec for review.
 - [ ] Confirm Epic App Market or Interconnect requirements with EHR team.

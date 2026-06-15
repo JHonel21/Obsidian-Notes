@@ -14,7 +14,6 @@ tags:
   - vendor-eval
   - enterprise-architecture
 ---
-
 # Vendor Evaluation: <% tp.file.folder(true).split('/').pop() %>
 
 ## 📋 Executive Summary
@@ -58,6 +57,7 @@ tags:
 * **Standards Supported:** (HL7 v2, FHIR R4, DICOM, X12)
 * **Integration Method:** (Real-time Web Services / Batch SFTP / Message Queue)
 
+
 ### System Context Diagram (Mermaid)
 ```mermaid
 graph LR
@@ -76,15 +76,14 @@ graph LR
     style SSO fill:#dfd,stroke:#333,stroke-width:2px
 ```
 
-### Technical Dependencies
 
+### Technical Dependencies
 - **Hosting Model:** (SaaS / Private Cloud / On-Premise VM)
 - **Client Requirements:** (Web browser / Citrix / Mobile App / Native OS)
 - **Network Requirements:** (Inbound/Outbound IP Whitelisting, VPN Tunnel, Reverse Proxy)
     
 
 ## 📈 Scalability & Vendor Viability
-
 - **High Availability / DR:** SLA uptime percentage and RTO/RPO metrics.
 - **Performance Under Load:** Concurrent user handling and historical API response latency.
 - **Vendor Viability:** Years in business, financial backing, and reference healthcare clients.
