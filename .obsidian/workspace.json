@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Healthcare-Vendor-Eval.md",
+                "file": "Templates/Healthcare-Vendor-Evaluation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Healthcare-Vendor-Eval"
+              "title": "Healthcare-Vendor-Evaluation"
             }
           }
         ]
@@ -209,9 +209,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "d2913c1b6d96ee13",
+  "active": "2d56fb888023b51f",
   "lastOpenFiles": [
     "Career-Notes/SCHS/Demands/Med-Assistance/TailorMed/Untitled.md",
+    "Templates/Healthcare-Vendor-Evaluation.md",
     "Templates/Healthcare-Vendor-Eval.md",
     "Career-Notes/SCHS/Demands/Med-Assistance/TailorMed/Tailor-Med-Discovery.md",
     "Career-Notes/SCHS/GE-Demo.md",
@@ -244,7 +245,6 @@
     "Obsidian-Docs.md",
     "Career-Notes/Untitled",
     "Circle-of-Life/Guiding-Principles.md",
-    "Productivity/AI-Tools.md",
     "Productivity",
     "Career-Notes/Clearpath",
     "Untitled.canvas"
