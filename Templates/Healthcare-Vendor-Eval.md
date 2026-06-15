@@ -9,7 +9,11 @@ tags:
   - enterprise-architecture
 meeting_date: 2026-06-15
 ---
-
+<%*
+let parentFolder = tp.file.folder(true).split('/').pop();
+let today = tp.date.now("YYYY-MM-DD");
+await tp.file.rename(parentFolder + "_" + today);
+-%>
 # Vendor Evaluation: <% tp.file.title %>
 
 ## 📋 Executive Summary
