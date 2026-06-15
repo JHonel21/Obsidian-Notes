@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Circle-of-Life/May-8-2026.md",
+                "file": "Templates/Healthcare-Vendor-Eval.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "May-8-2026"
+              "title": "Healthcare-Vendor-Eval"
             }
           }
         ]
@@ -205,11 +205,15 @@
       "templater-obsidian:Templater": false,
       "voice:Voice read text": false,
       "obsidian-importer:Open Importer": false,
-      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
+      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "fde6add25878ce11",
+  "active": "d2913c1b6d96ee13",
   "lastOpenFiles": [
+    "Templates/Template1.md",
+    "Templates/Healthcare-Vendor-Eval.md",
+    "Circle-of-Life/May-8-2026.md",
     "Career-Notes/Intelerad/Dave-06152026.md",
     "Career-Notes/Intelerad",
     "Career-Notes/SCHS/Onsite-Travel-February-2026.md",
@@ -222,7 +226,6 @@
     "Stocks/Relative-Strength-Index_RSI.md",
     "3D-Printing/Printer-and-Filament-Tuning/Temp-PA-Retraction-EM/Point-6mm-Nozzle_Overture-PETG-Black.md",
     "Stocks",
-    "Circle-of-Life/May-8-2026.md",
     "3D-Printing/Printer-and-Filament-Tuning/Extrusion-Multiplier.md",
     "3D-Printing/Printer-and-Filament-Tuning/Temp-PA-Retraction-EM/Point-6mm-Nozzle_Overture-Glow-PLA.md",
     "Career-Notes/Clearpath/Second-Call-Dan-Ostrow.md",
@@ -239,9 +242,7 @@
     "Career-Notes/Clearpath/Second-Call.md",
     "Career-Notes/Clearpath",
     "Circle-of-Life/Questions.md",
-    "Career-Notes/SE-Op/First-call.md",
     "Career-Notes/SE-Op",
-    "Obsidian-GitHub-Markdown-Guide.md",
     "3D-Printing/Projects/FGC-9",
     "3D-Printing/Projects",
     "Circle-of-Life",

@@ -1,0 +1,10 @@
+/* Mobile Optimization Snippet */
+@media (max-width: 600px) {
+    .mobile-navbar-actions {
+        gap: 15px; /* Larger gap for touch */
+    }
+    .view-action {
+        width: 40px; /* Larger buttons */
+        height: 40px;
+    }
+}

@@ -1,0 +1,10 @@
+/* Ensure Mermaid diagrams are legible in all modes */
+.mermaid {
+    background-color: var(--background-primary);
+    padding: 10px;
+    border-radius: 8px;
+}
+.mermaid svg {
+    max-width: 100%;
+    height: auto;
+}

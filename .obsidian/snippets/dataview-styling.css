@@ -1,0 +1,8 @@
+/* Responsive Dataview Tables */
+.dataview.table-view-table {
+    font-size: 0.9em;
+    width: 100%;
+}
+.dataview.table-view-table th {
+    background-color: var(--background-secondary);
+}
