@@ -10,7 +10,7 @@ tags:
 meeting_date: 2026-06-15
 ---
 
-# Vendor Evaluation: <% tp.file.title %>
+# Vendor Evaluation: Untitled
 
 ## 📋 Executive Summary
 * **Business Objective:** Brief description of the problem this vendor solves.
