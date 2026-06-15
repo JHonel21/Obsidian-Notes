@@ -190,8 +190,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -209,8 +208,10 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "d2913c1b6d96ee13",
+  "active": "fde6add25878ce11",
   "lastOpenFiles": [
+    "Career-Notes/Intelerad/Dave-06152026.md",
+    "Career-Notes/Intelerad",
     "Career-Notes/SCHS/Onsite-Travel-February-2026.md",
     "Career-Notes/Aya_Healthcare/Proposal-SOW-Checklist.md",
     "Stocks/Core Order Types.md",
@@ -241,12 +242,10 @@
     "Career-Notes/SE-Op/First-call.md",
     "Career-Notes/SE-Op",
     "Obsidian-GitHub-Markdown-Guide.md",
-    "3D-Printing/Projects/FGC-9/Tools-Materials-Parts.md",
     "3D-Printing/Projects/FGC-9",
     "3D-Printing/Projects",
     "Circle-of-Life",
     "Inventions/smart-hot-water-tank",
-    "Inventions",
     "Untitled.canvas"
   ]
 }
