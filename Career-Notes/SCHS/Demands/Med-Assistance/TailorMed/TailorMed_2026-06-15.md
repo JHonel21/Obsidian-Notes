@@ -1,29 +1,20 @@
-<%*
-let parentFolder = tp.file.folder(true).split('/').pop();
-let today = tp.date.now("YYYY-MM-DD");
-await tp.file.rename(parentFolder + "_" + today);
--%>
 ---
 type: vendor-evaluation
-vendor: "<% tp.file.folder(true).split('/').pop() %>"
+vendor: Untitled
 status: In Progress
-created: <% tp.file.creation_date("YYYY-MM-DD") %>
-last_reviewed: <% tp.file.last_modified_date("YYYY-MM-DD") %>
-meeting_date: <% tp.date.now("YYYY-MM-DD") %>
+created: 2026-06-15
+last_reviewed: 2026-06-15
 tags:
   - vendor-eval
   - enterprise-architecture
 ---
 
-# Vendor Evaluation: <% tp.file.folder(true).split('/').pop() %>
+# Vendor Evaluation: Untitled
 
 ## 📋 Executive Summary
 * **Business Objective:** Brief description of the problem this vendor solves.
 * **Architecture Alignment:** High-level statement on fit with existing infrastructure and application ecosystem.
-
-### Recommendation Matrix
-
-| Evaluation Pillar | Score (1-5) | Key Risk / Highlight |
+* **Recommendation Matrix:** | Evaluation Pillar | Score (1-5) | Key Risk / Highlight |
 | :--- | :---: | :--- |
 | Fit with Architecture | | |
 | Standards Compliance | | |
@@ -77,32 +68,33 @@ graph LR
 ```
 
 ### Technical Dependencies
-
 - **Hosting Model:** (SaaS / Private Cloud / On-Premise VM)
 - **Client Requirements:** (Web browser / Citrix / Mobile App / Native OS)
 - **Network Requirements:** (Inbound/Outbound IP Whitelisting, VPN Tunnel, Reverse Proxy)
     
 
 ## 📈 Scalability & Vendor Viability
-
 - **High Availability / DR:** SLA uptime percentage and RTO/RPO metrics.
 - **Performance Under Load:** Concurrent user handling and historical API response latency.
 - **Vendor Viability:** Years in business, financial backing, and reference healthcare clients.
     
 
 ## 💰 Total Cost of Ownership (TCO)
+
 > [!NOTE]
+> 
 > Projections should look at a 3-to-5 year window to account for scaling costs and implementation fatigue.
 
-
 ### Financial Breakdown
+
 - **Implementation Fee (Year 1 One-time):** $0.00
 - **Annual Subscription / Licensing:** $0.00
 - **Internal Resource Requirements:** (FTE hours for Implementation Management and Biomedical/IT engineering)
 - **Interface / Custom Development Fees:** $0.00
-
+    
 
 ### 5-Year Projection
+
 |**Cost Category**|**Year 1**|**Year 2**|**Year 3**|**Year 4**|**Year 5**|
 |---|---|---|---|---|---|
 |**Licensing/SaaS**||||||
@@ -110,8 +102,8 @@ graph LR
 |**Infrastructure / Compute**||||||
 |**Annual TCO**|**$0.00**|**$0.00**|**$0.00**|**$0.00**|**$0.00**|
 
-
 ## 📝 Next Steps & Action Items
+
 - [ ] Schedule technical deep dive with the vendor integration engineer.
 - [ ] Submit SOC 2 Type II and architecture overview to Infosec for review.
 - [ ] Confirm Epic App Market or Interconnect requirements with EHR team.
