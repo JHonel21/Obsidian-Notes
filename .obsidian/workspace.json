@@ -73,19 +73,8 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
-          },
-          {
-            "id": "7b44c3584e2c77cc",
-            "type": "leaf",
-            "state": {
-              "type": "notebook-navigator",
-              "state": {},
-              "icon": "notebook-navigator",
-              "title": "Notebook Navigator"
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -195,14 +184,23 @@
               "icon": "viewIcon",
               "title": "Markdown-Autocomplete"
             }
+          },
+          {
+            "id": "f0718496f5dfb999",
+            "type": "leaf",
+            "state": {
+              "type": "gemini-agent-view",
+              "state": {},
+              "icon": "sparkles",
+              "title": "Agent Mode"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -219,11 +217,22 @@
       "obsidian-importer:Open Importer": false,
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "notebook-navigator:Notebook Navigator": false
+      "notebook-navigator:Notebook Navigator": false,
+      "mermaid-tools:Open Mermaid Toolbar": false,
+      "gemini-scribe:Gemini Scribe: Agent Mode": false
     }
   },
-  "active": "7b44c3584e2c77cc",
+  "active": "f0718496f5dfb999",
   "lastOpenFiles": [
+    "gemini-scribe/Prompts/example-expert.md",
+    "gemini-scribe/Scheduled-Tasks/scheduled-tasks-state.json",
+    "gemini-scribe/Scheduled-Tasks/Runs",
+    "gemini-scribe/Scheduled-Tasks",
+    "gemini-scribe/Skills",
+    "gemini-scribe/Prompts",
+    "gemini-scribe/Background-Tasks",
+    "gemini-scribe/Agent-Sessions",
+    "gemini-scribe",
     "Career-Notes/Intelerad/Dave-06152026.md",
     "Career-Notes/Intelerad/Scott-06152026.md",
     "Career-Notes/SCHS/Demands/Med-Assistance/TailorMed/TailorMed_2026-06-15.md",
@@ -234,12 +243,8 @@
     "Career-Notes/SCHS/GE-Demo.md",
     "Career-Notes/SCHS/Demands/Med-Assistance/Untitled/desktop.ini",
     "Career-Notes/SCHS/Demands/Med-Assistance/TailorMed",
-    "Career-Notes/SCHS/Demands/Med-Assistance",
-    "Career-Notes/SCHS/Demands/AI-Governance",
-    "Career-Notes/SCHS/Demands",
     "Templates/Template1.md",
     "Circle-of-Life/May-8-2026.md",
-    "Career-Notes/Intelerad",
     "Career-Notes/SCHS/Onsite-Travel-February-2026.md",
     "Career-Notes/Aya_Healthcare/Proposal-SOW-Checklist.md",
     "Stocks/Core Order Types.md",
@@ -249,17 +254,12 @@
     "Stocks/Dividends.md",
     "Stocks/Relative-Strength-Index_RSI.md",
     "3D-Printing/Printer-and-Filament-Tuning/Temp-PA-Retraction-EM/Point-6mm-Nozzle_Overture-PETG-Black.md",
-    "Stocks",
     "3D-Printing/Printer-and-Filament-Tuning/Extrusion-Multiplier.md",
     "3D-Printing/Printer-and-Filament-Tuning/Temp-PA-Retraction-EM/Point-6mm-Nozzle_Overture-Glow-PLA.md",
     "Career-Notes/Clearpath/Second-Call-Dan-Ostrow.md",
     "Career-Notes/Clearpath/Second-Call-prep.md",
     "Career-Notes/Clearpath/First-call.md",
     "Career-Notes/Clearpath/Lauren-Brown-Email.md",
-    "Career-Notes/Job-Lists.md",
-    "Career-Notes/Untitled",
-    "Productivity",
-    "Career-Notes/Clearpath",
     "Untitled.canvas"
   ]
 }
