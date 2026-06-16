@@ -73,8 +73,19 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
+          },
+          {
+            "id": "7b44c3584e2c77cc",
+            "type": "leaf",
+            "state": {
+              "type": "notebook-navigator",
+              "state": {},
+              "icon": "notebook-navigator",
+              "title": "Notebook Navigator"
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -207,10 +218,11 @@
       "voice:Voice read text": false,
       "obsidian-importer:Open Importer": false,
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "notebook-navigator:Notebook Navigator": false
     }
   },
-  "active": "d2913c1b6d96ee13",
+  "active": "7b44c3584e2c77cc",
   "lastOpenFiles": [
     "Career-Notes/Intelerad/Dave-06152026.md",
     "Career-Notes/Intelerad/Scott-06152026.md",
