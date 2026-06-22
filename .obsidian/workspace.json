@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "gemini-scribe/AGENTS.md",
+                "file": "Coding/Quick-Types/Windows Symbols.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AGENTS"
+              "title": "Windows Symbols"
             }
           }
         ]
@@ -211,11 +211,12 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "2d56fb888023b51f",
+  "active": "d2913c1b6d96ee13",
   "lastOpenFiles": [
+    "Coding/Quick-Types/Shortcuts.md",
+    "gemini-scribe/AGENTS.md",
     "Career-Notes/Intelerad/Scott-06152026.md",
     "gemini-scribe/example-prompts.json",
-    "gemini-scribe/AGENTS.md",
     "gemini-scribe/Prompts/example-expert.md",
     "gemini-scribe/Scheduled-Tasks/scheduled-tasks-state.json",
     "gemini-scribe/Scheduled-Tasks/Runs",
