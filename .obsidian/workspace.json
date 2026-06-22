@@ -208,9 +208,7 @@
       "obsidian-importer:Open Importer": false,
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "notebook-navigator:Notebook Navigator": false,
-      "mermaid-tools:Open Mermaid Toolbar": false,
-      "gemini-scribe:Gemini Scribe: Agent Mode": false
+      "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
   "active": "2d56fb888023b51f",
