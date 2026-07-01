@@ -22,3 +22,4 @@ EM Testing
 	- EM: 0.98
 - v2:
 	- EM: 0.975
+	- Looked really good, going to reduce PA to 0.069 and repeat
