@@ -1,0 +1,1 @@
+- Said he sent an email to Lauren and Fares. She believes it would be at least 2 months prior to them being ready to hire
