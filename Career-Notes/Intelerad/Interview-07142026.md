@@ -11,4 +11,5 @@ Collaboration with Dave:
 
 - Her callouts:
 	- InteleShare SME
-	- Next steps are meeting with Michael Bowman 30 minutes
+	- Next steps are meeting with Michael Bowman 30 minutes, then 60 minute meeting with all implementation directors 
+	- Salary maybe need to see with the team, but she says the job title will be more complex to be changed
