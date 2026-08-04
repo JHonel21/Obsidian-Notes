@@ -13,7 +13,8 @@ UHC has vision (no cost for vision) and dental too
 
 Bonus and equity would be from the offer letter from Lauren. Tom says over the past 4 years that 100% of people have employee stock options mentioned in the letter.
 
-Base salary for the role? Tom doesn't know. Tom states that he hates when the range is stated 
+Base salary for the role? Tom doesn't know. Tom states that he hates when the range is stated and Tom is the only one who will see the current salary.
+	He said he hates HireRight's customer service is not good. And now the digital passport is sent separately and end up in spam folders.
 
 I don't think "Solutions Engineer" is the right title anymore
 
