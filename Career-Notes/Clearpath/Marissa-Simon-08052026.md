@@ -3,6 +3,12 @@
 - Marissa Brooks is the Director of Product Management: 3 months with the company
 - Simon Lin is a PM and has been with Clearpath for around 2 years
 - I've interviewed with Lauren, Dan, Fares, and Tara
+- New role for product team:
+	- Doing QA pre/post release
+	- Documentation of things
+	- Product screening for intake and prioritization
+	- Release notes and internal coms
+	- Product release coordinator essentially 
 
 Every answer should show four things:
 1. You understand customer workflows.
