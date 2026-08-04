@@ -12,6 +12,7 @@
 	- Platform SME and helping implementation
 	- 4 week sprint cycles in current state
 	- RCA 
+- Apparently they had an internal move to fill this role and the person is now leaving Clearpath
 
 Every answer should show four things:
 1. You understand customer workflows.
@@ -46,3 +47,5 @@ Every answer should show four things:
 ---
 ### 6.
 <font color="#ffffff">> "If we looked back a year after hiring me, what would make you say this hire fundamentally improved how Product operates?"</font>
+- Quality and transparacy, catching things prior to customers bring it forward. Documentation internally and externally.
+- Simon: smoother transition from implementation to post go-li
