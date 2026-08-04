@@ -1,5 +1,11 @@
 Stretch objectives, management style is objective
 
+Tom said that he will recap things to finalize
+
+401k is offered but no match currently, but can change within a pay period when match is offered
+
+United Healthcare with a PPO or HSA
+
 I don't think "Solutions Engineer" is the right title anymore
 
 Originally, yes.
