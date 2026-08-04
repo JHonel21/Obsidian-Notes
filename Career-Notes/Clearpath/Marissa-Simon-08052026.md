@@ -12,7 +12,9 @@
 	- Platform SME and helping implementation
 	- 4 week sprint cycles in current state
 	- RCA 
+	- Less on the presales side of things 
 - Apparently they had an internal move to fill this role and the person is now leaving Clearpath
+- Campfire team with Marissa, Simon, Fares
 
 Every answer should show four things:
 1. You understand customer workflows.
