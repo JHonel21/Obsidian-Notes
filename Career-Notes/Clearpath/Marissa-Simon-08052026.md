@@ -2,6 +2,13 @@
 - Marissa Brooks is the Director of Product Management
 - Simon Lin
 
+Every answer should show four things:
+
+1. You understand customer workflows.
+2. You recognize patterns across customers.
+3. You know when something is a product issue versus an implementation issue.
+4. You help make the company more scalable.
+
 # Questions that will impress Product
 
 These are much stronger than the usual "What's the culture?"
@@ -10,7 +17,7 @@ These are much stronger than the usual "What's the culture?"
 
 > "What customer behavior has surprised the Product team most over the past year?"
 
-That starts a genuine conversation.
+
 
 ---
 
@@ -18,7 +25,7 @@ That starts a genuine conversation.
 
 > "What assumptions about customer workflows have turned out to be incorrect?"
 
-Excellent Product question.
+
 
 ---
 
@@ -26,7 +33,7 @@ Excellent Product question.
 
 > "If I joined tomorrow, what implementation insight do you wish someone had been consistently bringing Product over the last year?"
 
-This is probably my favorite.
+
 
 ---
 
@@ -34,7 +41,7 @@ This is probably my favorite.
 
 > "What differentiates the highest-value product feedback from noise?"
 
-Very mature question.
+
 
 ---
 
@@ -42,7 +49,7 @@ Very mature question.
 
 > "Where does Product currently spend the most time compensating for implementation challenges?"
 
-Shows systems thinking.
+
 
 ---
 
@@ -50,4 +57,3 @@ Shows systems thinking.
 
 > "If we looked back a year after hiring me, what would make you say this hire fundamentally improved how Product operates?"
 
-This one is memorable.
