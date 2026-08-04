@@ -48,4 +48,4 @@ Every answer should show four things:
 ### 6.
 <font color="#ffffff">> "If we looked back a year after hiring me, what would make you say this hire fundamentally improved how Product operates?"</font>
 - Quality and transparacy, catching things prior to customers bring it forward. Documentation internally and externally.
-- Simon: smoother transition from implementation to post go-li
+- Simon: smoother transition from implementation to post go-live. Measured success of customer satisfaction. Role has a lot of ambuigity so can mold into things that could standardize 
