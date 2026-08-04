@@ -5,6 +5,11 @@ Tom said that he will recap things to finalize
 401k is offered but no match currently, but can change within a pay period when match is offered
 
 United Healthcare with a PPO or HSA
+	Grandfathered into the PPO for a strong offering 
+		First of the month following the date of hire
+Life insurance is offered up to $125k
+Short and long term disability covered by the company (sunlife)
+UHC has vision (no cost for vision) and dental too
 
 I don't think "Solutions Engineer" is the right title anymore
 
