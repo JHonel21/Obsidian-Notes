@@ -1,1 +1,3 @@
-- Assume the
+- Assume they don't know anything about me
+- Marissa Brooks is the Director of Product Management
+- Simon Lin
