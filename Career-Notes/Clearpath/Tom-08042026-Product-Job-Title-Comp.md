@@ -1,6 +1,6 @@
 Stretch objectives, management style is objective
 
-Tom said that he will recap things to finalize
+Tom said that he will recap things to finalize for them to hire me
 
 401k is offered but no match currently, but can change within a pay period when match is offered
 
