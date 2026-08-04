@@ -1,7 +1,7 @@
 - Assume they don't know anything about me
 - PatientConnect, ProviderConnect, LegalConnect are core products
-- Marissa Brooks is the Director of Product Management
-- Simon Lin
+- Marissa Brooks is the Director of Product Management: 3 months with the company
+- Simon Lin is a PM and has been with Clearpath for around 2 years
 - I've interviewed with Lauren, Dan, Fares, and Tara
 
 Every answer should show four things:
