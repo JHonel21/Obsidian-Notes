@@ -9,6 +9,9 @@
 	- Product screening for intake and prioritization
 	- Release notes and internal coms
 	- Product release coordinator essentially 
+	- Platform SME and helping implementation
+	- 4 week sprint cycles in current state
+	- RCA 
 
 Every answer should show four things:
 1. You understand customer workflows.
