@@ -11,6 +11,10 @@ Life insurance is offered up to $125k
 Short and long term disability covered by the company (sunlife)
 UHC has vision (no cost for vision) and dental too
 
+Bonus and equity would be from the offer letter from Lauren. Tom says over the past 4 years that 100% of people have employee stock options mentioned in the letter.
+
+Base salary for the role? Tom doesn't know. Tom states that he hates when the range is stated 
+
 I don't think "Solutions Engineer" is the right title anymore
 
 Originally, yes.
