@@ -1,4 +1,6 @@
-## I don't think "Solutions Engineer" is the right title anymore
+
+
+I don't think "Solutions Engineer" is the right title anymore
 
 Originally, yes.
 
