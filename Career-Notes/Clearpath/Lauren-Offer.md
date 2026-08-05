@@ -17,3 +17,5 @@ Salary: $150k
 Stock options: commensurate to each individuals role
 
 Working with Fares, Marissa, and Simon
+
+Apple testing device and android app
