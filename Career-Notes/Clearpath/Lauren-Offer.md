@@ -8,7 +8,12 @@
 	- 4 week sprint cycles in current state
 	- RCA 
 	- Less on the presales side of things 
+	- Lauren and Product are mapping out the roadmap
+	- Post dev 
+	- Referring provider portal for Acumen needs a lot of features and validation of features
 
 Product Quality Lead
 Salary: $150k
 Stock options: commensurate to each individuals role
+
+Working with Fares, Marissa, and Simon
