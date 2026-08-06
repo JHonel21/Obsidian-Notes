@@ -19,4 +19,4 @@ Testing 1/14/2026
 	- Extruder Temp: 225°C
 	- PA Range: 0.01-0.08
 	- Retraction Distance: 4.5 mm
-	- Retraction Rate: 45 mm/s
+	- Retraction Rate: 45 mm/
