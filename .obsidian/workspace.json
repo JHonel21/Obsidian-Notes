@@ -25,12 +25,14 @@
             "id": "21106798e5140b7a",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.13.4"
+                "file": "3D-Printing/Printer-and-Filament-Tuning/Temp-PA-Retraction-EM-Speed/Point-6mm-Nozzle_Overture-Glow-PLA.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.13.4"
+              "icon": "lucide-file",
+              "title": "Point-6mm-Nozzle_Overture-Glow-PLA"
             }
           }
         ],
@@ -225,11 +227,13 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "21106798e5140b7a",
+  "active": "2d56fb888023b51f",
   "lastOpenFiles": [
+    "3D-Printing/Printer-and-Filament-Tuning/Temp-PA-Retraction-EM-Speed/Point-6mm-Nozzle_Overture-PETG-Black.md",
+    "3D-Printing/Print-Settings-Reference/Supports.md",
+    "3D-Printing/Printer-and-Filament-Tuning/Temp-PA-Retraction-EM-Speed/Point-4mm-HS-Nozzle_Hobby-Lobby-PLA-Rainbow.md",
     "Git-Cache.md",
     "Obsidian-Docs.md",
-    "3D-Printing/Printer-and-Filament-Tuning/Temp-PA-Retraction-EM-Speed/Point-6mm-Nozzle_Overture-PETG-Black.md",
     "Career-Notes/Clearpath/Lauren-Offer.md",
     "Career-Notes/Clearpath/Tom-08042026-Product-Job-Title-Comp.md",
     "Career-Notes/Clearpath/Marissa-Simon-08052026.md",
@@ -246,7 +250,6 @@
     "Bloomingmind-OK",
     "Stocks/Fund-Breakdown-Notes.md",
     "Career-Notes/Intelerad/Interview-07142026.md",
-    "3D-Printing/Printer-and-Filament-Tuning/Temp-PA-Retraction-EM-Speed/Point-4mm-HS-Nozzle_Hobby-Lobby-PLA-Rainbow.md",
     "3D-Printing/Printer-and-Filament-Tuning/Temp-PA-Retraction-EM-Speed/Point-6mm-Nozzle_Overture-Glow-PLA.md",
     "3D-Printing/Projects/Functional-Prints/hat-shaper.md",
     "Coding/Quick-Types/Windows Symbols.md",
@@ -256,7 +259,6 @@
     "gemini-scribe/AGENTS.md",
     "Career-Notes/Intelerad/Scott-06152026.md",
     "gemini-scribe/example-prompts.json",
-    "gemini-scribe/Prompts/example-expert.md",
     "gemini-scribe/Scheduled-Tasks/scheduled-tasks-state.json",
     "gemini-scribe/Scheduled-Tasks/Runs",
     "gemini-scribe/Scheduled-Tasks",
