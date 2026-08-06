@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Obsidian-Docs"
             }
+          },
+          {
+            "id": "21106798e5140b7a",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.13.4"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -41,7 +54,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": true
+                "autoReveal": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -210,10 +225,10 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "2d56fb888023b51f",
+  "active": "21106798e5140b7a",
   "lastOpenFiles": [
-    "Obsidian-Docs.md",
     "Git-Cache.md",
+    "Obsidian-Docs.md",
     "3D-Printing/Printer-and-Filament-Tuning/Temp-PA-Retraction-EM-Speed/Point-6mm-Nozzle_Overture-PETG-Black.md",
     "Career-Notes/Clearpath/Lauren-Offer.md",
     "Career-Notes/Clearpath/Tom-08042026-Product-Job-Title-Comp.md",
