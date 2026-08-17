@@ -1,0 +1,5 @@
+- Make sure that I don't set up contribution in Optum until UHC is fully set up
+- He will send me the UHC enrollment form in the next day or so then will give info on reaching out to Optum
+- Log into Exponent once he sends the info, let him know if I cannot get into Exponent
+- Make sure the UHC enrollment form date is for 8/20
+- For the phone reimbursement, circle the phone number that is mine to indicate the cost
