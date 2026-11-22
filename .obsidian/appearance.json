@@ -10,5 +10,6 @@
     "dataview-styling",
     "high-contrast-mermaid",
     "mobile-optimization"
-  ]
+  ],
+  "showRibbon": true
 }
