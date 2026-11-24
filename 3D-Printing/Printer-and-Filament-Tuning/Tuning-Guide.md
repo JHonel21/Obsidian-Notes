@@ -307,27 +307,36 @@ End G-code:
 PRINT_END
 ```
 
+> [!warning] Turn off automatic temperature commands
+> PrusaSlicer only skips its own heating commands if it finds literal `M104`, `M109`, `M140` or `M190` lines in the start G-code. A line like `PRINT_START ...` doesn't count, so PrusaSlicer adds `M190` and `M104` (first layer temp) **before** your macro and `M109` after it. That heats the nozzle to full temp before the soak and mesh, which causes ooze.
+> In PrusaSlicer, switch to Expert mode and go to **Printer Settings > Custom G-code**, then uncheck **Emit temperature commands automatically**. The macro already handles all heating. `PRINT_START` also starts with `M104 S0` as a backstop in case a slicer or test generator still preheats.
+
 ### Pre-flight checks
 
 - [ ] Both presets are actually selected (the active presets in an exported bundle can be stale)
 - [ ] Extrusion widths are in mm and not percent
 - [ ] Label objects is Firmware-specific
+- [ ] **Emit temperature commands automatically** is unchecked (Printer Settings > Custom G-code, Expert mode)
 - [ ] Filament start G-code contains a `SET_PRESSURE_ADVANCE` line (placeholder value for now)
 
 ## B1. Temperature tower
 
 Goal: find the temperature with the best balance of layer adhesion, bridging, stringing and surface.
 
-1. PrusaSlicer **Calibration** menu (2.6 or newer) then **Temperature calibration**.
-2. Start 225, end 195, step 5 (PrusaSlicer builds the tower and inserts the temp changes).
-3. Slice with the real print preset and filament preset. Print.
-4. Evaluate each block:
+> [!note] PrusaSlicer has no built-in calibration menu
+> That feature exists in OrcaSlicer and SuperSlicer, not PrusaSlicer. For PrusaSlicer you use a test model and the layer slider to insert temperature changes.
+
+1. Download a temperature tower STL with equal-height blocks (search Printables for "temperature tower" and pick one with 5 to 7 blocks, each with an overhang and a bridge, or use the one Ellis' guide points to).
+2. Slice with the real print preset and filament preset. For this test only, set the filament nozzle temp and first layer temp to **225** (the hottest block).
+3. In the layer preview, find the first layer of the second block with the vertical slider. Right-click the **+** icon on the slider and choose **Add custom G-code**. Enter `M104 S220`. Repeat at the start of each following block with `M104 S215`, `M104 S210`, down to `M104 S195`.
+4. Slice and send the G-code, then set the filament temps back to your baseline so the test values don't stick. Print the tower.
+5. Evaluate each block:
    - **Layer adhesion:** try to snap or twist each block. Weak blocks mean too cold.
    - **Bridging and overhangs:** better when cooler.
    - **Stringing and blobs:** worse when hotter.
    - **Surface:** shine and consistency.
-5. Pick the lowest temperature that still gives strong layer adhesion. Set that as the nozzle temp and set the first layer temp 5 C higher.
-6. If you end up above 220 C, note it in the log. That's outside the label window but fine for this filament if the prints are clean.
+6. Pick the lowest temperature that still gives strong layer adhesion. Set that as the nozzle temp and set the first layer temp 5 C higher.
+7. If you end up above 220 C, note it in the log. That's outside the label window but fine for this filament if the prints are clean.
 
 ## B2. First layer check
 
@@ -354,21 +363,39 @@ Goal: find the temperature with the best balance of layer adhesion, bridging, st
 
 Goal: set a safe ceiling so the slicer never asks for more flow than the hotend can melt.
 
-1. **Calibration** menu then **Max volumetric speed**.
-2. Start 5, end 20, and use the step the dialog suggests.
-3. Print it. Listen for the extruder clicking or skipping.
-4. Find the point where the vase wall turns rough, thin or gappy. Use the **formula shown in the dialog** to convert that height to mm3/s.
-5. Set `filament_max_volumetric_speed` to **10 to 15 percent below** that point.
-6. Expect around 12 to 15 mm3/s for this filament. If the result is much lower than 10 mm3/s, raise the nozzle temp 5 C and retest, or check for a partial clog or heat creep.
+PrusaSlicer has no built-in max flow test, so use an extrusion-in-air test from the console. Flow in mm3/s equals `F / 60 x 2.405`, where 2.405 mm2 is the cross-section of 1.75 mm filament.
+
+1. Heat the nozzle to your chosen temp (for example 215 C), home, and lift the nozzle clear of the bed:
+   ```
+   G28
+   G1 Z50 F600
+   M83
+   ```
+2. Extrude 50 mm at each of these feedrates, one at a time, and watch and listen:
+
+   | Command | Flow |
+   |---|---|
+   | `G1 E50 F240` | 9.6 mm3/s |
+   | `G1 E50 F300` | 12.0 mm3/s |
+   | `G1 E50 F360` | 14.4 mm3/s |
+   | `G1 E50 F420` | 16.8 mm3/s |
+   | `G1 E50 F480` | 19.2 mm3/s |
+
+   If Klipper complains the extrude-only move is too long, use `E40`.
+3. **Pass:** a continuous strand with no clicking, grinding, slowing or visible skipping. **Fail:** clicking, a thin or stuttering strand, or the extruder gear slipping.
+4. Take the highest flow that passed. Extrusion in air overstates what you get in a real print, because a real print has back pressure from the bed and the previous layer. Set `filament_max_volumetric_speed` about **20 to 25 percent below** the air limit.
+5. Expect a final cap around 10 to 14 mm3/s for this filament. If the air limit is under about 12 mm3/s, raise the nozzle temp 5 C and retest, or check for a partial clog or heat creep.
+6. Restore absolute extrusion afterward with `M82` (the next `PRINT_START` does this anyway).
+7. Optional confirmation print: a vase-mode cylinder at your capped flow. Speed in mm/s equals flow / (0.45 x 0.2), so 12 mm3/s is about 133 mm/s. The walls should look consistent from bottom to top with no thin or gappy sections.
 
 > [!note]
 > Your speeds at 0.2 mm layers and 0.45 mm widths only demand about 5 to 8 mm3/s, so this cap mostly protects you if you raise speeds, thicken layers or widen lines later.
 
 ## B4. Extrusion multiplier
 
-Two methods. Use the Ellis one since you already follow his guide, and use YOLO as a cross check.
+Use the Ellis single-wall method since you already follow his guide, then confirm with a top surface check.
 
-### Method 1: Ellis single-wall cube
+### Ellis single-wall cube
 
 1. Slice a cube with **vase mode** or a single perimeter, no top, no bottom, 0.2 mm layers, extrusion width 0.45. Real temps and speeds.
 2. Print it.
@@ -380,16 +407,11 @@ Two methods. Use the Ellis one since you already follow his guide, and use YOLO 
    Target width is the width you set (0.45).
 5. Enter the new EM in the filament preset and reprint to confirm. Expect a value between 0.95 and 1.00.
 
-### Method 2: PrusaSlicer YOLO flow test
+### Top surface check
 
-1. **Calibration** menu then **Flow rate**, YOLO (recommended).
-2. Print, find the block with the best looking top surface (smooth, no gaps, no ridging).
-3. Calculate:
-   ```
-   new_EM = old_EM x (100 + modifier) / 100
-   ```
-
-If the two methods disagree by more than about 0.02, trust the calipers and check for wet filament or a filament diameter that varies along the spool.
+1. Print a flat slab about 40 x 40 x 3 mm with 100 percent infill and 5 top layers, using your real print preset.
+2. Look at the top surface. **Gaps or visible line separation** mean under-extrusion. **Ridges, blobs or a rough, raised look** mean over-extrusion.
+3. If it disagrees with the caliper result by a visible amount, adjust EM by 0.01 and reprint the slab. Also check for wet filament or filament diameter that varies along the spool.
 
 ## B5. Pressure advance (Ellis pattern method)
 
@@ -404,6 +426,8 @@ Pressure advance (PA) depends on temperature, line width, layer height, speed an
    - Acceleration equal to the accel you use on perimeters
    - PA start 0, end 0.1, step 0.005 (direct drive range)
    - Follow the tool's own tooltips if they differ from these starting points
+   - **Start and end G-code:** include them. If the tool has custom start and end G-code fields, put `PRINT_START BED=55 EXTRUDER=215 SOAK=180` in the start field and `PRINT_END` in the end field, using literal numbers because the tool doesn't know PrusaSlicer placeholders. Without them the pattern prints with no mesh, no purge and no parking.
+   - After generating, open the G-code and read the first 20 lines. Make sure the tool didn't add its own heat or home commands with different temps before your start block.
 3. Generate, slice and print. The G-code sets PA itself for each pattern line.
 4. Read the pattern. The best value gives **sharp, even corners with no bulge and no gap**, and the same line width in the slow and fast sections.
    - Corners **bulge** or the line gets thick after the corner: PA too low
@@ -423,8 +447,8 @@ Pressure advance (PA) depends on temperature, line width, layer height, speed an
 
 Goal: the **smallest** retraction that removes stringing. More than needed causes clogs and blobs.
 
-1. Print a retraction tower (Ellis' guide or PrusaSlicer **Calibration** menu), direct drive range about 0.4 to 1.6 mm at 30 mm/s.
-2. Find the lowest height that is clean and set that retraction length in the filament preset.
+1. Use a stringing test (two thin towers some distance apart works well) and follow Ellis' guide for the Klipper method. Without a built-in tool in PrusaSlicer, the simple version is to print the same test three times with retraction length set to values that bracket your current one, for example 0.6, 1.0 and 1.4 mm (or 1.2, 1.6 and 2.0 mm if 1.0 mm already strings), changing only that between prints. Speed stays at 30 mm/s. Ellis' guide also covers a faster tower method, which needs Klipper firmware retraction enabled in printer.cfg and in the PrusaSlicer printer preset. Follow his steps for that if you want it, and remove both settings afterward.
+2. Find the lowest retraction that is clean and set that length in the filament preset. Refine in steps of 0.2 mm if needed.
 3. If stringing is still present at about 1.5 mm:
    - Dry the filament first
    - Lower the nozzle temp 5 C and retest
@@ -552,7 +576,7 @@ Goal: the **smallest** retraction that removes stringing. More than needed cause
 | `EXTRUDER` | 220 | Nozzle temp |
 | `SOAK` | 180 | Bed soak seconds with the nozzle cold, before homing and meshing |
 
-Sequence: part fan off, bed to temp, soak, home, nozzle preheat to 150 C, bed mesh, move to purge start, nozzle to full temp, purge lines, lift. `PRINT_END` retracts, lifts Z (capped at the Z maximum), parks, turns heaters off, fan off, steppers off.
+Sequence: part fan off, cancel any slicer preheat, bed to temp, soak, home, nozzle preheat to 150 C, bed mesh, move to purge start, nozzle to full temp, purge lines, lift. `PRINT_END` retracts, lifts Z (capped at the Z maximum), parks, turns heaters off, fan off, steppers off.
 
 ## Filament start G-code (per filament preset)
 
@@ -589,7 +613,7 @@ Color: ____________   Spool date: ___________   Dried? Y / N
 B1 Temperature     nozzle: ____  first layer: ____  bed: ____ / ____
 B2 First layer     Z offset (probe z_offset): ________
 B3 Max vol speed   result: ____ mm3/s   set to: ____ mm3/s
-B4 Extrusion mult  old: ____  new: ____  method: Ellis / YOLO
+B4 Extrusion mult  old: ____  new: ____  method: Ellis wall test
 B5 Pressure adv    value: ______   pattern settings: ________________
 B6 Retraction      length: ____ mm   speed: ____ mm/s
 B7 Fan             min: ____   max: ____   bridge: ____
