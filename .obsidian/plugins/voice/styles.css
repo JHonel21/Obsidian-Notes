@@ -1,3 +1,10 @@
+/* ============================================================
+   Obsidian Voice — plugin styles
+   All static styling lives here (loaded automatically by Obsidian)
+   instead of being injected at runtime or set inline.
+   ============================================================ */
+
+/* --- Animations --- */
 @keyframes rotateCounterClockwise {
   from {
     transform: rotate(0deg);
@@ -7,9 +14,1655 @@
   }
 }
 
+@keyframes voice-pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .rotating-icon {
   animation: rotateCounterClockwise 2s linear infinite;
 }
 
+/* Utility — doubled class raises specificity to win over component
+   display rules (e.g. flex buttons) via specificity rather than overrides. */
+.voice-hidden.voice-hidden {
+  display: none;
+}
+
+/* Voice's own icons (src/ui/icons.ts): fixed 24×24 artwork drawn the same on
+   every Obsidian version, instead of the app's bundled Lucide icons whose look
+   and stroke vary between versions. Size comes from --voice-icon-size on the
+   control; the doubled class keeps theme/app "svg" rules from restyling them,
+   and flex: 0 0 auto keeps a tight button from squeezing the icon away. */
+svg.voice-icon.voice-icon {
+  display: block;
+  flex: 0 0 auto;
+  width: var(--voice-icon-size, 18px);
+  height: var(--voice-icon-size, 18px);
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+svg.voice-icon.voice-icon .voice-icon-fill {
+  fill: currentColor;
+  stroke: none;
+}
+
 /* Native browser tooltips (title attribute) work best for status bar */
 /* They can escape container overflow constraints unlike CSS-based tooltips */
+
+/* --- Status bar controls --- */
+.voice-statusbar-voice-switcher.voice-statusbar-btn {
+  margin-right: 6px;
+  padding: 0 6px;
+  font-weight: 600;
+  font-size: 0.9em;
+  color: var(--text-normal);
+}
+
+/* Status bar buttons: Voice's own icons on a soft rounded hover, so they
+   read as one modern control group (matching the player). */
+.voice-statusbar-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 22px;
+  min-width: 22px;
+  padding: 0 3px;
+  margin: 0 1px;
+  border-radius: var(--radius-s);
+  color: var(--text-muted);
+  cursor: pointer;
+  --voice-icon-size: 16px;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.1s ease;
+}
+
+.voice-statusbar-btn:hover {
+  background: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
+
+.voice-statusbar-btn:active {
+  transform: scale(0.92);
+}
+
+/* While loading, only the icon spins, not the button with its hover
+   background (which would turn as a square). */
+.voice-statusbar-btn.rotating-icon {
+  animation: none;
+}
+
+.voice-statusbar-btn.rotating-icon svg {
+  animation: rotateCounterClockwise 2s linear infinite;
+}
+
+/* The seek arrows are drawn larger in their 24×24 box than the others. */
+.voice-statusbar-btn.rewind,
+.voice-statusbar-btn.fast-forward {
+  --voice-icon-size: 18px;
+}
+
+.voice-statusbar-btn.play {
+  color: var(--interactive-accent);
+}
+
+.voice-statusbar-btn.play:hover {
+  color: var(--interactive-accent-hover);
+}
+
+.status-bar-separator {
+  margin-left: 8px;
+  margin-right: 8px;
+  color: var(--text-muted);
+  opacity: 0.3;
+  user-select: none;
+}
+
+/* The speed: its value with a small chevron, opening the speed menu. */
+.status-bar-speed-display.voice-statusbar-btn {
+  gap: 2px;
+  margin: 0 4px;
+  padding: 0 4px 0 7px;
+  font-size: 11px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-normal);
+  background: var(--background-modifier-hover);
+  border-radius: 999px;
+}
+
+.status-bar-speed-display.voice-statusbar-btn:hover {
+  background: var(--background-modifier-active-hover);
+}
+
+.voice-statusbar-chevron {
+  display: inline-flex;
+  color: var(--text-muted);
+  --voice-icon-size: 12px;
+}
+
+/* --- Desktop progress bar --- */
+.voice-progress-bar-container {
+  display: none;
+  width: 100px;
+  height: 6px;
+  background: var(--background-modifier-border);
+  border-radius: 3px;
+  margin: 0 4px 0 8px;
+  overflow: hidden;
+  position: relative;
+  align-self: center;
+}
+
+.voice-progress-bar {
+  height: 100%;
+  width: var(--voice-progress, 0%);
+  background: var(--interactive-accent);
+  border-radius: 2px;
+  transition:
+    width 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.voice-progress-bar-container.visible {
+  display: block;
+}
+
+.voice-progress-bar-container.error {
+  background: var(--background-modifier-error);
+}
+
+.voice-progress-bar-container.error .voice-progress-bar {
+  background: var(--text-error);
+  width: 100%;
+}
+
+/* --- Settings: tempo slider indicators --- */
+.voice-slider-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.voice-slider-wrapper .slider {
+  flex: 1;
+}
+
+.voice-slider-indicator {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+  min-width: 50px;
+}
+
+.voice-slider-indicator.left {
+  text-align: right;
+}
+
+.voice-slider-indicator.right {
+  text-align: left;
+}
+
+/* Live numeric readout shown next to a slider */
+.voice-slider-value {
+  margin-left: 10px;
+  min-width: 88px;
+  text-align: right;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* --- Settings: credential validation panel --- */
+.voice-validation-container {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background-color: var(--background-secondary);
+  border-radius: 6px;
+  border: 1px solid var(--background-modifier-border);
+}
+
+.voice-validation-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.voice-validation-title {
+  margin: 0;
+  color: var(--text-normal);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.voice-validation-test-button {
+  padding: 6px 12px;
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.voice-validation-test-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.voice-validation-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.voice-validation-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.voice-validation-indicator.is-loading {
+  background-color: var(--color-orange);
+  animation: voice-pulse 1.5s ease-in-out infinite;
+}
+
+.voice-validation-indicator.is-valid {
+  background-color: var(--color-green);
+}
+
+.voice-validation-indicator.is-invalid {
+  background-color: var(--color-red);
+}
+
+.voice-validation-text {
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.voice-validation-text.is-loading {
+  color: var(--color-orange);
+}
+
+.voice-validation-text.is-valid {
+  color: var(--color-green);
+}
+
+.voice-validation-text.is-invalid {
+  color: var(--color-red);
+}
+
+.voice-validation-help {
+  margin-top: 8px;
+  display: none;
+}
+
+.voice-validation-help.is-visible {
+  display: block;
+}
+
+.voice-validation-help-text {
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
+.voice-validation-help-link {
+  color: var(--link-color);
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.voice-validation-help-link:hover {
+  text-decoration: underline;
+}
+
+/* --- Mobile control bar overlay --- */
+.voice-mobile-overlay {
+  position: fixed;
+  bottom: calc(
+    var(--safe-area-inset-bottom, 0px) + var(--mobile-navbar-height, 58px)
+  );
+  left: 0;
+  right: 0;
+  background: var(--background-primary);
+  border-top: none;
+  border-radius: 0;
+  padding: 8px 12px;
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 999;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  margin: 0;
+  max-width: 100vw;
+  transform: translateY(2px);
+}
+
+.voice-mobile-overlay.is-visible {
+  display: flex;
+}
+
+.voice-mobile-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.voice-mobile-speed-group {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: var(--nav-item-background);
+  padding: 1px;
+}
+
+.voice-mobile-control-btn {
+  border: none;
+  color: var(--interactive-accent);
+  padding: 6px;
+  border-radius: var(--radius-s);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 66px;
+  min-height: 36px;
+  transition: all 0.15s ease;
+  opacity: 1;
+  --voice-icon-size: 18px;
+}
+
+.voice-mobile-primary-btn {
+  --voice-icon-size: 16px;
+}
+
+.voice-mobile-control-btn svg {
+  color: var(--interactive-accent);
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.voice-mobile-control-btn:hover {
+  color: var(--interactive-accent);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Doubled-class overrides: raise specificity above theme button styles
+   (e.g. ".some-container button") through specificity alone. */
+.voice-mobile-speed-group.voice-mobile-speed-group {
+  border: none;
+}
+
+.voice-mobile-control-btn.voice-mobile-control-btn {
+  background-color: var(--background-primary);
+}
+
+.voice-mobile-control-btn.voice-mobile-control-btn:hover {
+  background-color: var(--background-modifier-hover);
+}
+
+.voice-mobile-control-btn:hover svg {
+  color: var(--interactive-accent);
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.voice-mobile-control-btn:active {
+  background: var(--background-modifier-active);
+  color: var(--interactive-accent);
+  transform: scale(0.98);
+  opacity: 1;
+}
+
+.voice-mobile-control-btn:active svg {
+  color: var(--interactive-accent);
+  fill: currentColor;
+  stroke: currentColor;
+}
+
+.voice-mobile-primary-btn {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-radius: 50%;
+  corner-shape: round; /* not Obsidian's squircle, see .voice-ctl */
+  min-width: 36px;
+  min-height: 36px;
+  opacity: 1;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.voice-mobile-primary-btn:hover {
+  background: var(--interactive-accent-hover);
+  transform: scale(1.08);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.16),
+    0 2px 4px rgba(0, 0, 0, 0.32);
+}
+
+.voice-mobile-primary-btn:active {
+  background: var(--interactive-accent);
+  transform: scale(0.95);
+}
+
+.voice-mobile-speed-display {
+  background: transparent;
+  color: var(--interactive-accent);
+  padding: 4px 8px;
+  border-radius: var(--radius-s);
+  font-size: 11px;
+  font-weight: 500;
+  min-width: 36px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+  opacity: 0.9;
+}
+
+.voice-mobile-progress-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.voice-mobile-progress-container {
+  display: none;
+  flex: 1;
+  height: 6px;
+  background: var(--background-modifier-border);
+  border-radius: var(--radius-xs);
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.voice-mobile-progress-bar {
+  height: 100%;
+  width: var(--voice-progress, 0%);
+  background: var(--interactive-accent);
+  border-radius: var(--radius-xs);
+  transition: width 0.3s ease;
+}
+
+.voice-mobile-progress-container.visible {
+  display: block;
+}
+
+.voice-mobile-progress-container.error {
+  background: var(--color-red);
+}
+
+.voice-mobile-progress-container.error .voice-mobile-progress-bar {
+  background: var(--text-error);
+  width: 100%;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 480px) {
+  .voice-mobile-overlay {
+    padding: 6px 8px;
+    margin: 0 2px;
+    border-radius: var(--radius-s) var(--radius-s) 0 0;
+  }
+
+  .voice-mobile-controls {
+    gap: 4px;
+  }
+
+  .voice-mobile-control-btn {
+    min-width: 32px;
+    min-height: 32px;
+    padding: 4px;
+  }
+
+  .voice-mobile-primary-btn {
+    min-width: 38px;
+    min-height: 38px;
+  }
+
+  .voice-mobile-speed-display {
+    padding: 3px 6px;
+    font-size: 10px;
+    min-width: 32px;
+  }
+
+  .voice-mobile-speed-group {
+    gap: 1px;
+  }
+}
+
+/* Dark theme adjustments */
+.theme-dark .voice-mobile-overlay {
+  box-shadow:
+    0 -1px 3px rgba(0, 0, 0, 0.2),
+    0 -2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Ensure the overlay doesn't interfere with system navigation */
+@supports (bottom: env(safe-area-inset-bottom)) {
+  .voice-mobile-overlay {
+    bottom: max(80px, calc(env(safe-area-inset-bottom) + 60px));
+  }
+}
+
+/* --- Voice player (right-sidebar / full-screen) --- */
+.voice-player {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 14px;
+}
+
+.voice-player-header {
+  text-align: center;
+}
+
+.voice-player-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: var(--text-normal);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.voice-player-subtitle {
+  font-size: 0.85em;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.voice-player-seek {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.voice-player-scrubber-wrap {
+  position: relative;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  min-width: 0;
+}
+
+.voice-player-scrubber {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Bookmarks on the scrubber: a small accent pill per bookmark, laid over the
+   track (inset by half the thumb, where the thumb's centre can reach). A tap
+   jumps there. */
+.voice-player-marks {
+  --voice-thumb-half: calc(var(--slider-thumb-width, 18px) / 2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--voice-thumb-half);
+  right: var(--voice-thumb-half);
+  pointer-events: none;
+}
+
+.voice-player-mark.voice-player-mark {
+  position: absolute;
+  top: 50%;
+  left: calc(var(--voice-mark-pos, 0) * 100%);
+  width: 4px;
+  height: 14px;
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1.5px var(--background-primary);
+  background: var(--interactive-accent);
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+  cursor: pointer;
+  transition: transform 0.12s ease;
+}
+
+/* A bigger, invisible target around the thin mark, for fingers. */
+.voice-player-mark.voice-player-mark::before {
+  content: "";
+  position: absolute;
+  inset: -6px -8px;
+}
+
+.voice-player-mark.voice-player-mark:hover {
+  transform: translate(-50%, -50%) scale(1.3);
+}
+
+.voice-player-time {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+  min-width: 36px;
+  text-align: center;
+}
+
+/* --- Player controls ---
+   Obsidian styles every native <button> per platform (desktop / phone /
+   tablet, e.g. "button:not(.clickable-icon)" and ".is-mobile button"): padding,
+   a fixed height, a background and a shadow. Those rules used to beat the
+   player's single-class selectors, so on iPad the controls turned into grey
+   pills whose padding squeezed the icons to nothing. Every control therefore
+   carries .voice-ctl, and the reset below ("button" plus a doubled class inside
+   .voice-player, specificity 0,3,1) outranks or, loading after the app CSS,
+   ties and wins against Obsidian's button rules on every version and platform. Sizes are set explicitly (no padding, no
+   min/max from the app) and icons never shrink, so a control is the same
+   circle with the same icon everywhere. */
+.voice-player {
+  --voice-surface: var(--background-modifier-hover);
+  --voice-surface-strong: var(--background-modifier-active-hover);
+  --voice-accent-soft: hsla(var(--interactive-accent-hsl, 258, 88%, 66%), 0.16);
+}
+
+.voice-player button.voice-ctl.voice-ctl {
+  appearance: none;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: var(--voice-ctl-size, 36px);
+  height: var(--voice-ctl-size, 36px);
+  min-width: 0;
+  min-height: 0;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  /* Obsidian 1.15 gives buttons squircle corners (corner-shape: squircle),
+     which turns a 50% radius into a rounded square. Round corners keep every
+     control a true circle; browsers without corner-shape ignore this. */
+  corner-shape: round;
+  background: transparent;
+  box-shadow: none;
+  color: var(--text-muted);
+  font: inherit;
+  line-height: 1;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  /* A long press must reach the press gesture: no text selection or iOS
+     callout menu, which would cancel the hold. */
+  user-select: none;
+  -webkit-touch-callout: none;
+  --voice-icon-size: 18px;
+  transition:
+    transform 0.12s ease,
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.voice-player button.voice-ctl.voice-ctl:active {
+  transform: scale(0.92);
+}
+
+.voice-player button.voice-ctl.voice-ctl:focus-visible {
+  outline: 2px solid var(--interactive-accent);
+  outline-offset: 2px;
+}
+
+/* Hover only where a real pointer hovers: on touch screens a tap would
+   otherwise leave the hover look stuck on the last button. */
+@media (hover: hover) {
+  .voice-player button.voice-ctl.voice-ctl:hover {
+    background: var(--voice-surface);
+    color: var(--text-normal);
+  }
+}
+
+.voice-player button.voice-ctl.voice-ctl.is-disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Transport: previous · seek back · play · seek forward · next */
+.voice-player-transport {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.voice-player button.voice-ctl.voice-player-track {
+  --voice-ctl-size: 36px;
+  --voice-icon-size: 20px;
+  color: var(--text-normal);
+}
+
+.voice-player button.voice-ctl.voice-player-skip {
+  --voice-ctl-size: 44px;
+  --voice-icon-size: 30px;
+  color: var(--text-normal);
+}
+
+/* Seconds shown inside the seek ring. */
+.voice-player-skip-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1px;
+  font-size: 10px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+  pointer-events: none;
+}
+
+.voice-player button.voice-ctl.voice-player-play {
+  --voice-ctl-size: 60px;
+  --voice-icon-size: 26px;
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  box-shadow:
+    0 6px 16px rgba(0, 0, 0, 0.22),
+    0 1px 3px rgba(0, 0, 0, 0.18);
+}
+
+@media (hover: hover) {
+  .voice-player button.voice-ctl.voice-player-play:hover {
+    background: var(--interactive-accent-hover);
+    color: var(--text-on-accent);
+  }
+}
+
+/* While a note is generated the play button stays still (a stop icon; a tap
+   cancels) and a ring around it shows the progress. Before any progress is
+   known, a short arc circles instead. Only the ring rotates, and it is a
+   circle, so it looks the same at every angle and on every device. */
+.voice-play-ring {
+  position: absolute;
+  inset: -7px;
+  display: none;
+  pointer-events: none;
+}
+
+.voice-player
+  button.voice-ctl.voice-player-play.voice-generating
+  .voice-play-ring {
+  display: block;
+}
+
+.voice-player .voice-play-ring svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  transform: rotate(-90deg); /* start at 12 o'clock */
+}
+
+.voice-play-ring-track,
+.voice-play-ring-value {
+  fill: none;
+  stroke-width: 4;
+}
+
+.voice-play-ring-track {
+  stroke: var(--background-modifier-border);
+}
+
+.voice-play-ring-value {
+  stroke: var(--interactive-accent);
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.3s ease;
+}
+
+.voice-play-ring.is-indeterminate {
+  animation: voice-ring-spin 1s linear infinite;
+}
+
+@keyframes voice-ring-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Mobile control bar: spin only the icon, never the (rectangular) button. */
+.voice-mobile-control-btn.rotating-icon {
+  animation: none;
+}
+
+.voice-mobile-control-btn.rotating-icon svg {
+  animation: rotateCounterClockwise 2s linear infinite;
+}
+
+/* Actions row: save · folder · bookmark on the left, repeat · speed on the
+   right. A container, so a narrow sidebar gets smaller controls (below). */
+.voice-player-secondary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  container-type: inline-size;
+}
+
+.voice-player button.voice-ctl.voice-player-download,
+.voice-player button.voice-ctl.voice-player-folder-btn,
+.voice-player button.voice-ctl.voice-player-bookmark-btn,
+.voice-player button.voice-ctl.voice-player-repeat {
+  --voice-ctl-size: 36px;
+  background: var(--voice-surface);
+}
+
+.voice-player button.voice-ctl.voice-player-repeat {
+  margin-left: auto;
+}
+
+.voice-player button.voice-ctl.voice-player-folder-btn.is-active,
+.voice-player button.voice-ctl.voice-player-repeat.is-active {
+  background: var(--voice-accent-soft);
+  color: var(--interactive-accent);
+}
+
+.voice-player button.voice-ctl.voice-player-folder-btn:disabled,
+.voice-player button.voice-ctl.voice-player-folder-btn.is-disabled {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* The download/save button stays interactive even with no audio to save, so a
+   press-and-hold can still open the folder picker (e.g. to pin a default
+   folder). It only dims to hint that a plain tap has nothing to save. */
+.voice-player button.voice-ctl.voice-player-download.is-muted,
+.voice-player button.voice-ctl.voice-player-bookmark-btn.is-muted {
+  opacity: 0.45;
+}
+
+/* Speed stepper: one pill holding − 1.0× + */
+.voice-player-speed {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  height: 36px;
+  padding: 0 2px;
+  border-radius: 18px;
+  background: var(--voice-surface);
+}
+
+.voice-player button.voice-ctl.voice-player-speed-btn {
+  --voice-ctl-size: 32px;
+  --voice-icon-size: 16px;
+}
+
+@media (hover: hover) {
+  .voice-player button.voice-ctl.voice-player-speed-btn:hover {
+    background: var(--voice-surface-strong);
+  }
+}
+
+.voice-player-speed-value {
+  min-width: 38px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-normal);
+}
+
+/* A narrow sidebar: tighter actions row, so the speed stepper still fits. */
+@container (max-width: 300px) {
+  .voice-player-secondary {
+    gap: 4px;
+  }
+
+  .voice-player button.voice-ctl.voice-player-download,
+  .voice-player button.voice-ctl.voice-player-folder-btn,
+  .voice-player button.voice-ctl.voice-player-bookmark-btn,
+  .voice-player button.voice-ctl.voice-player-repeat {
+    --voice-ctl-size: 32px;
+  }
+
+  .voice-player button.voice-ctl.voice-player-speed-btn {
+    --voice-ctl-size: 28px;
+  }
+
+  .voice-player-speed {
+    height: 32px;
+  }
+
+  .voice-player-speed-value {
+    min-width: 34px;
+  }
+}
+
+/* Reading toggles + Cache: five equal segments, icon over a short caption. */
+.voice-player-toggles {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.voice-player button.voice-ctl.voice-player-toggle {
+  flex-direction: column;
+  gap: 4px;
+  width: auto;
+  height: 52px;
+  border-radius: var(--radius-m, 8px);
+  background: var(--voice-surface);
+}
+
+.voice-player button.voice-ctl.voice-player-toggle.is-active {
+  background: var(--voice-accent-soft);
+  color: var(--interactive-accent);
+}
+
+.voice-player-toggle-caption {
+  max-width: 100%;
+  overflow: hidden;
+  font-size: 10.5px;
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.voice-player-chapters {
+  border-top: 1px solid var(--background-modifier-border);
+  padding-top: 10px;
+}
+
+.voice-player-chapters-title {
+  font-size: 0.85em;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.voice-player-chapters-empty {
+  font-size: 0.85em;
+  color: var(--text-faint);
+}
+
+.voice-player-chapter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 8px;
+  border-radius: var(--radius-s);
+  cursor: pointer;
+}
+
+/* Action bar over a chapter row: Delete / Move / Rename. Right-aligned and only
+   as wide as its buttons, with the background fading out to the left so the
+   start of the file name stays readable underneath. The buttons share the bar's
+   surface as flat text labels (no separate button pills), so nothing spills
+   outside the bar. */
+.voice-player-chapter-actions {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 0 4px 0 32px;
+  border-radius: var(--radius-s);
+  background: linear-gradient(
+    to right,
+    transparent 0,
+    var(--background-secondary-alt) 32px
+  );
+}
+
+/* Doubled class: outranks Obsidian's per-platform button rules (fixed height,
+   padding, background), which differ between desktop, phone and tablet. */
+.voice-player-chapter-action.voice-player-chapter-action {
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 4px 9px;
+  height: auto;
+  min-height: 0;
+  font-size: var(--font-ui-smaller);
+  line-height: 1.2;
+  color: var(--text-muted);
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: var(--radius-s);
+  cursor: pointer;
+}
+
+.voice-player-chapter-action.voice-player-chapter-action.is-active {
+  color: var(--interactive-accent);
+}
+
+.voice-player-chapter-action:hover {
+  color: var(--text-normal);
+  background: var(--background-modifier-hover);
+}
+
+.voice-player-chapter-action.mod-warning {
+  color: var(--text-error);
+  background: transparent;
+  box-shadow: none;
+}
+
+.voice-player-chapter-action.mod-warning:hover {
+  color: var(--text-error);
+  background: var(--background-modifier-hover);
+}
+
+.voice-player-chapter-confirm {
+  margin-right: 4px;
+  font-size: var(--font-ui-smaller);
+  color: var(--text-muted);
+}
+
+.voice-player-chapter:hover {
+  background: var(--background-modifier-hover);
+}
+
+.voice-player-chapter.is-current {
+  background: var(--background-modifier-active-hover);
+}
+
+.voice-player-chapter-index {
+  font-size: 11px;
+  color: var(--text-muted);
+  min-width: 18px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.voice-player-chapter-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-normal);
+}
+
+.voice-player-chapter.is-current .voice-player-chapter-name {
+  color: var(--text-accent);
+  font-weight: 600;
+}
+
+/* Rename control on each chapter row */
+.voice-player-chapter-edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-s);
+  cursor: pointer;
+  color: var(--text-faint);
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+.voice-player-chapter:hover .voice-player-chapter-edit {
+  opacity: 1;
+}
+
+/* Touch screens have no hover, so the actions control is always shown. */
+@media (hover: none) {
+  .voice-player-chapter-edit {
+    opacity: 1;
+  }
+}
+
+.voice-player-chapter-edit:hover {
+  color: var(--text-normal);
+  background: var(--background-modifier-hover);
+}
+
+.voice-player-chapter-rename {
+  flex: 1;
+  min-width: 0;
+  font-size: inherit;
+}
+
+/* Bookmarks control on a chapter row, left of ⋮: a tap opens the list
+   below the row. Revealed like ⋮ (on hover, always on touch); always shown,
+   filled, once the file has bookmarks, and while the list is open. */
+.voice-player-chapter-marks.voice-player-chapter-marks {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: var(--radius-s);
+  box-shadow: none;
+  background: transparent;
+  color: var(--text-faint);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  --voice-icon-size: 14px;
+}
+
+.voice-player-chapter:hover .voice-player-chapter-marks,
+.voice-player-chapter-marks.voice-player-chapter-marks.has-bookmarks,
+.voice-player-chapter-marks.voice-player-chapter-marks.is-open {
+  opacity: 1;
+}
+
+@media (hover: none) {
+  .voice-player-chapter-marks.voice-player-chapter-marks {
+    opacity: 1;
+  }
+}
+
+.voice-player-chapter-marks.voice-player-chapter-marks:hover {
+  color: var(--text-normal);
+  background: var(--background-modifier-hover);
+}
+
+.voice-player-chapter-marks.voice-player-chapter-marks.has-bookmarks {
+  color: var(--text-muted);
+}
+
+.voice-player-chapter-marks.has-bookmarks > svg.voice-icon.voice-icon {
+  fill: currentColor;
+}
+
+.voice-player-chapter-marks.voice-player-chapter-marks.is-open {
+  background: var(--voice-accent-soft);
+  color: var(--interactive-accent);
+}
+
+/* The bookmark list, opened below its chapter. */
+.voice-player-bookmarks {
+  margin: 2px 0 6px 22px;
+  padding-left: 8px;
+  border-left: 2px solid var(--background-modifier-border);
+}
+
+.voice-player-bookmarks-empty {
+  padding: 6px 8px;
+  font-size: var(--font-ui-smaller);
+  color: var(--text-faint);
+}
+
+.voice-player-bookmark {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: var(--radius-s);
+  font-size: var(--font-ui-small);
+  cursor: pointer;
+  --voice-icon-size: 14px;
+}
+
+.voice-player-bookmark:hover {
+  background: var(--background-modifier-hover);
+}
+
+.voice-player-bookmark > svg.voice-icon.voice-icon {
+  color: var(--text-faint);
+}
+
+.voice-player-bookmark-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-normal);
+}
+
+.voice-player-bookmark-time {
+  flex: 0 0 auto;
+  font-size: 11px;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* The bookmark the playing file passed last. */
+.voice-player-bookmark.is-current .voice-player-bookmark-name {
+  color: var(--text-accent);
+  font-weight: 600;
+}
+
+.voice-player-bookmark.is-current > svg.voice-icon.voice-icon {
+  color: var(--interactive-accent);
+  fill: var(--interactive-accent);
+}
+
+.voice-player-bookmark:hover .voice-player-chapter-edit {
+  opacity: 1;
+}
+
+/* A bookmark just added lights up briefly. */
+.voice-player-bookmark.is-new {
+  animation: voice-bookmark-new 1.6s ease-out;
+}
+
+@keyframes voice-bookmark-new {
+  from {
+    background: var(--voice-accent-soft);
+  }
+  to {
+    background: transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .voice-player-bookmark.is-new {
+    animation: none;
+  }
+}
+
+/* The notice after adding or deleting a bookmark: name · time, then actions. */
+.voice-bookmark-notice {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.voice-bookmark-notice-title {
+  flex: 1;
+  min-width: 0;
+  margin-right: 8px;
+  font-variant-numeric: tabular-nums;
+}
+
+.voice-bookmark-notice-action.voice-bookmark-notice-action {
+  flex: 0 0 auto;
+  height: auto;
+  min-height: 0;
+  margin: 0;
+  padding: 2px 8px;
+  border: none;
+  border-radius: var(--radius-s);
+  box-shadow: none;
+  background: transparent;
+  color: var(--text-accent);
+  font-size: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.voice-bookmark-notice-action.voice-bookmark-notice-action:hover {
+  background: var(--background-modifier-hover);
+}
+
+.voice-bookmark-notice-hint {
+  margin-top: 4px;
+  font-size: var(--font-ui-smaller);
+  color: var(--text-muted);
+}
+
+/* Provider / voice selectors + read-code-blocks toggle */
+.voice-player-options {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.voice-player-select {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* Folder picker: choose which folder's MP3s show up as chapters */
+.voice-player-folder {
+  display: flex;
+  align-items: center;
+}
+
+.voice-player-folder-select {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* "What's New" modal: hero banner + changelog */
+.voice-whats-new-modal {
+  max-width: 640px;
+}
+
+.voice-whats-new-hero {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-m);
+  margin-bottom: 12px;
+}
+
+.voice-whats-new-support {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.voice-bmc-button {
+  height: 48px;
+  width: auto;
+  border-radius: var(--radius-s);
+}
+
+.voice-whats-new-body {
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.voice-whats-new-body h2 {
+  margin-top: 1em;
+}
+
+.voice-whats-new-body h2:first-child {
+  margin-top: 0;
+}
+
+/* Determinate loading bar, pinned to the bottom of the panel. The fill grows
+   to the real synthesis progress via the --voice-progress custom property. */
+.voice-player-loading {
+  margin-top: auto;
+  /* Clear of the status bar, which floats over the panel's bottom edge. */
+  padding-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s ease;
+}
+
+.voice-player-loading.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.voice-player-loading-track {
+  position: relative;
+  flex: 1;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--background-modifier-border);
+  overflow: hidden;
+}
+
+.voice-player-loading-fill {
+  width: var(--voice-progress, 0%);
+  height: 100%;
+  border-radius: 3px;
+  background: var(--interactive-accent);
+  transition: width 0.3s linear;
+}
+
+/* While audio is being generated, a light sheen runs across the progress
+   bars, so it is clear work goes on between the (sometimes slow) steps. */
+.voice-player-loading.is-visible .voice-player-loading-track::after,
+.voice-progress-bar-container.is-generating::after,
+.voice-mobile-progress-container.is-generating::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.35) 50%,
+    transparent 100%
+  );
+  transform: translateX(-100%);
+  animation: voice-progress-sheen 1.6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes voice-progress-sheen {
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .voice-player-loading.is-visible .voice-player-loading-track::after,
+  .voice-progress-bar-container.is-generating::after,
+  .voice-mobile-progress-container.is-generating::after {
+    animation: none;
+  }
+}
+
+/* The ✕ next to a progress bar: the only control that cancels generating. */
+.voice-cancel-generation {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: none;
+  color: var(--color-red);
+  cursor: pointer;
+  --voice-icon-size: 16px;
+}
+
+/* Over the player's and mobile bar's own button styles. */
+.voice-player-loading .voice-cancel-generation,
+.voice-mobile-progress-row .voice-cancel-generation {
+  color: var(--color-red);
+  background: transparent;
+  box-shadow: none;
+}
+
+.voice-cancel-generation:hover,
+.voice-player-loading .voice-cancel-generation:hover,
+.voice-mobile-progress-row .voice-cancel-generation:hover {
+  background: rgba(var(--color-red-rgb), 0.15);
+}
+
+/* Tap-vs-hold save gesture (issue #57): a translucent accent sweep fills around
+   the button while it is held, signalling that the hold action is about to
+   fire. The --press custom property (0→1) is driven from pressGesture.ts. It's a
+   pseudo-element conic sweep (not a CSS mask, and not a child element) so it
+   never collides with the button's icon — which is re-rendered via setIcon — and
+   stays within Obsidian's supported CSS feature set (mask/clip-path are only
+   partially supported). */
+.voice-pressing {
+  position: relative;
+}
+
+.voice-pressing::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--interactive-accent) calc(var(--press, 0) * 360deg),
+    transparent 0deg
+  );
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* File-conflict modal: the ".mp3" suffix shown next to the rename field. */
+.voice-conflict-ext {
+  margin-left: 6px;
+  color: var(--text-muted);
+}
+
+/* Folder picker (custom audio-folder feature) */
+.voice-folder-suggestion {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.voice-folder-suggestion-icon {
+  display: inline-flex;
+  color: var(--text-muted);
+}
+
+.voice-folder-suggestion .svg-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.voice-folder-suggestion-name {
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* The active default folder is highlighted and carries a "Default" chip. */
+.voice-folder-suggestion.is-default {
+  border-left: 2px solid var(--interactive-accent);
+  background: var(--background-modifier-hover);
+}
+
+.voice-folder-suggestion.is-default .voice-folder-suggestion-icon {
+  color: var(--text-accent);
+}
+
+.voice-folder-suggestion-badge {
+  flex-shrink: 0;
+  padding: 1px 6px;
+  border-radius: var(--radius-s);
+  font-size: var(--font-ui-smaller);
+  color: var(--text-on-accent);
+  background: var(--interactive-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.voice-folder-suggestion-pin,
+.voice-folder-suggestion-star {
+  display: inline-flex;
+  flex-shrink: 0;
+  color: var(--text-faint);
+  cursor: pointer;
+}
+
+.voice-folder-suggestion-pin:hover,
+.voice-folder-suggestion-pin.is-default,
+.voice-folder-suggestion-star:hover {
+  color: var(--text-accent);
+}
+
+/* Favorites use a distinct gold accent so they read differently from the
+   purple default: the star and the folder icon on the left both pick it up.
+   The default (purple) wins on the icon when a folder is both. */
+.voice-folder-suggestion-star.is-favorite {
+  color: var(--color-yellow);
+}
+
+.voice-folder-suggestion.is-favorite:not(.is-default)
+  .voice-folder-suggestion-icon {
+  color: var(--color-yellow);
+}
+
+/* Visual break between the default/favorite block at the top and all other
+   folders, with a small caption so the two sections read distinctly. */
+.voice-folder-suggestion.is-section-start {
+  position: relative;
+  margin-top: 22px;
+  border-top: 1px solid var(--background-modifier-border);
+}
+
+.voice-folder-suggestion.is-section-start::before {
+  content: "Other folders";
+  position: absolute;
+  left: 0;
+  top: -18px;
+  font-size: var(--font-ui-smaller);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* --- Speech profile editor (src/ui/ProfileEditorModal.ts) --- */
+.modal.voice-profile-editor-modal {
+  width: min(760px, 95vw);
+}
+
+.voice-profile-form {
+  max-height: 40vh;
+  overflow-y: auto;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.voice-profile-form-note {
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+  padding: 8px 0;
+}
+
+.voice-profile-text {
+  width: 100%;
+  min-height: 220px;
+  font-family: var(--font-monospace);
+  font-size: var(--font-ui-small);
+  resize: vertical;
+}
+
+.voice-profile-status {
+  margin-top: 8px;
+  font-size: var(--font-ui-small);
+}
+
+.voice-profile-status ul {
+  margin: 4px 0 0;
+  padding-left: 18px;
+}
+
+.voice-profile-ok {
+  color: var(--text-success);
+}
+
+.voice-profile-error {
+  color: var(--text-error);
+}
+
+.voice-profile-warning {
+  color: var(--text-warning);
+}

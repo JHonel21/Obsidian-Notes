@@ -276,19 +276,19 @@ Everything in Part B is done with the real print preset, so the results transfer
 
 ### Baseline: print preset
 
-| Setting | Value |
-|---|---|
-| Layer height / first layer | 0.2 mm / 0.25 mm |
-| Extrusion widths (mm, not %) | default 0.45, first layer 0.5, perimeters 0.45, external 0.45, infill 0.45, solid 0.45, top 0.4, support 0.4 |
-| Walls | 3 (4 for functional parts) |
-| Top / bottom layers | 5 / 4 |
-| Infill | 25 to 30 percent, cubic or gyroid |
-| Speeds (mm/s) | first layer 25, perimeters 60, external 40, small perimeters 30, infill 60 (70 max), solid 30, top 30, bridges 60, gap fill 20, travel 250 |
-| Accelerations (mm/s2) | first layer 800, default 3000, external 2000, perimeters 3500, infill 5500, solid 3500, top solid 2500, bridge 2000, travel 6000 |
-| Seam | Aligned or rear (matte filament hides seams well) |
-| Thick bridges | On |
-| Label objects | **Firmware-specific** (required for KAMP adaptive mesh and exclude object) |
-| Arc fitting | Optional. Test on a small print first. `[gcode_arcs]` is already in printer.cfg |
+| Setting                      | Value                                                                                                                                      |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Layer height / first layer   | 0.2 mm / 0.25 mm                                                                                                                           |
+| Extrusion widths (mm, not %) | default 0.45, first layer 0.5, perimeters 0.45, external 0.45, infill 0.45, solid 0.45, top 0.4, support 0.4                               |
+| Walls                        | 3 (4 for functional parts)                                                                                                                 |
+| Top / bottom layers          | 5 / 4                                                                                                                                      |
+| Infill                       | 25 to 30 percent, cubic or gyroid                                                                                                          |
+| Speeds (mm/s)                | first layer 25, perimeters 60, external 40, small perimeters 30, infill 60 (70 max), solid 30, top 30, bridges 60, gap fill 20, travel 250 |
+| Accelerations (mm/s2)        | first layer 800, default 3000, external 2000, perimeters 3500, infill 5500, solid 3500, top solid 2500, bridge 2000, travel 6000           |
+| Seam                         | Aligned or rear (matte filament hides seams well)                                                                                          |
+| Thick bridges                | On                                                                                                                                         |
+| Label objects                | **Firmware-specific** (required for KAMP adaptive mesh and exclude object)                                                                 |
+| Arc fitting                  | Optional. Test on a small print first. `[gcode_arcs]` is already in printer.cfg                                                            |
 
 > [!note] Why accels are listed
 > If every acceleration field is 0, PrusaSlicer emits nothing and Klipper runs everything at `max_accel` (6500), including outer walls and the first layer. Always set them.
